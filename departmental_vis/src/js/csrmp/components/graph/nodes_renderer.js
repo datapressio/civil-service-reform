@@ -13,7 +13,7 @@ var NodesRenderer = module.exports = function(graph) {
     "Red": "#e54545"
   };
   this._minSize = 40;
-  this._maxSize = 120;
+  this._maxSize = 150;
 
   this._graph = graph;
   var sizes = _.map (this._graph.allNodes, function(n) { return n.scale(); });

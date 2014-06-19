@@ -47,6 +47,26 @@ Tree.prototype.descendentEdges = function() {
   }), true);
 };
 
+Tree.prototype.ascendantEdges = function() {
+  var edges = [];
+  var current = this;
+  while(current && current.inboundEdge()) {
+    edges.push(current.inboundEdge());
+    current = current.parent();
+  }
+  return edges;
+}
+
+Tree.prototype.ascendantNodes = function() {
+  var nodes = [];
+  var current = this;
+  while(current && current.parent()) {
+    current = current.parent();
+    nodes.push(current);
+  }
+  return nodes;
+}
+
 Tree.prototype.scale = function() {
   return this._root.scale();
 };
@@ -74,13 +94,8 @@ Tree.prototype._memoizeNeighbours = function() {
   this._outboundEdges = results[1] || [];
 }
 var Edge = function(source, target) {
-  this._targetLength = 200;
   this.source = source;
   this.target = target;
-};
-
-Edge.prototype.length = function() {
-  return this.source.scale() + this.target.scale() + this._targetLength;
 };
 
 Edge.prototype.key = function() {

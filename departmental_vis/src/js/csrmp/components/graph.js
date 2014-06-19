@@ -14,10 +14,14 @@ var Graph = module.exports = function(root, svg) {
   this._charge = -10000;
   this._friction = 0.1;
   this._gravity = 0.9;
-  this._linkDistance = 500;
+  this._linkDistance = 600;
+  this._distanceNoiseCoefficient = 0.25;
+
 
   this._nodes = [];
   this._edges = [];
+  this._upstreamNodes = [];
+  this._upstreamEdges = [];
   this.root = root;
   this._selectedNode = root;
   this.allNodes = this.root.descendentNodes();
@@ -34,7 +38,6 @@ Graph.prototype.render = function() {
   this.selectNode(this.root);
 };
 
-
 Graph.prototype._setupLayout = function() {
   this.layout.size([this._width, this._height])
   .nodes(this._nodes)
@@ -42,7 +45,7 @@ Graph.prototype._setupLayout = function() {
   .charge(this._charge)
   .friction(this._friction)
   .gravity(this._gravity)
-  .linkDistance(this._linkDistance)
+  .linkDistance(bindListener(this, function(d) { return this._linkDistance * (1-Math.random()*this._distanceNoiseCoefficient)}))
   .on("tick", bindListener(this, this._tick)).start();
 };
 
@@ -51,9 +54,9 @@ Graph.prototype._tick = function() {
   this._nodeRenderer.tick();
   this._selectedNode.x = this._rootX;
   this._selectedNode.y = this._rootY;
-  if(this._upstreamNode) {
-    this._upstreamNode.x = this.upstreamX;
-    this._upstreamNode.y = this.upstreamY;
+  if(this._upstreamNodes[0]) {
+    this._upstreamNodes[0].x = this.upstreamX;
+    this._upstreamNodes[0].y = this.upstreamY;
   }
 };
 
@@ -77,9 +80,12 @@ Graph.prototype.selectNode = function(node) {
   }
 
   this._selectedNode = node;
-  this._upstreamNode = node.parent();
-  update(this._nodes, node.neighbourNodes());
-  update(this._edges, node.neighbourEdges());
+  update(this._upstreamNodes, node.ascendantNodes());
+  update(this._upstreamEdges, node.ascendantEdges());
+  update(this._nodes, node.neighbourNodes().concat(this._upstreamNodes));
+  update(this._edges, node.neighbourEdges().concat(this._upstreamEdges));
+  console.log(this._nodes)
+  console.log(this._edges)
   this._edgeRenderer.render(this.layout.links());
   this._nodeRenderer.render(this.layout.nodes());
   this.layout.start();
