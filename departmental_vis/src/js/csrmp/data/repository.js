@@ -5,7 +5,7 @@ var _ = require("underscore");
 var Repository = module.exports = function() {};
 
 Repository.prototype.getGraph = function(callback) {
-  d3.json("/data/major_projects_departmental_breakdown.json", function(error, response) {
+  d3.json("../data/major_projects_departmental_breakdown.json", function(error, response) {
     var csData = response["Civil Service"];
     var n = 0;
     var m = 0;
