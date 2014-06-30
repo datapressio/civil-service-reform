@@ -37,7 +37,7 @@ h3 {
 
 #csr-mp-report {
   width: 100%;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .dept_overview {
@@ -110,6 +110,43 @@ h3 {
   background: transparent;
   background-image: none;
   -webkit-appearance: none;
-
 }
 
+.depts_table {
+  margin-top: 2em;
+}
+
+.depts_table table {
+  width: 100%;
+}
+
+.depts_table th {
+  text-align: left;
+}
+
+.depts_table th, .depts_table td {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.depts_table tr.header {
+  border-bottom: 1px solid #333;
+}
+
+.depts_table tr:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+.depts_table .name {
+  width: 33%;
+}
+
+.depts_table tr:hover:not(.header) {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.depts_table tr.header th:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}

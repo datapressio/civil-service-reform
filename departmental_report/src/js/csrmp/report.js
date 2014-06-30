@@ -25,11 +25,11 @@ Report.prototype.init = function() {
   this._repo.getGraph(bindListener(this, function(graph) {
     var depts = graph.neighbourNodes();
     var cs = _.find(depts, function(dept) { return dept.key() == 'cs'});
-    var deptsDropdown = new components.DepartmentDropdown(this, depts);
+    var deptsTable = new components.DepartmentsTable(this, depts);
     var deptBudgetPie = new components.BudgetPie(this, cs);
     var ratingsHistogram = new components.RatingsHistogram(this);
     var deptsOverview = new components.DepartmentOverview(this, deptBudgetPie, ratingsHistogram);
-    var layout = new components.Layout(deptsDropdown, deptsOverview);
+    var layout = new components.Layout(deptsOverview, deptsTable);
     layout.render("#" + this._nodeId);
     this.setSelection(graph);
   }));

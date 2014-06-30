@@ -1,0 +1,18 @@
+<table class="departments_table">
+  <tr class="header">
+    <th class="name">Department name</th>
+    <th class="projects">Number of projects</th>
+    <th class="budget">Total budget</th>
+    <th class="forecast">Total forecast</th>
+    <th class="variance">Over/under budget</th>
+  </tr>
+  {{#departments}}
+  <tr class="department {{id}}">
+      <td class="name">{{label}}</td>
+      <td class="projects">{{projects_count}}</td>
+      <td class="budget">{{cash_budget}}</td>
+      <td class="forecast">{{cash_forecast}}</td>
+      <td class="variance">{{percent_variance}}</td>
+    </tr>
+  {{/departments}}
+</table>
