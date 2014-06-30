@@ -64,5 +64,5 @@ BudgetPie.prototype._onSelectionChange = function(selection) {
 
 BudgetPie.prototype._data = [
   { color: "#009ade", dept: true },
-  { color: "#aaaaaa", dept: false}
+  { color: "#eeeeee", dept: false}
 ];

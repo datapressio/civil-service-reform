@@ -2,7 +2,8 @@ var render = require("../util/render")
 var fs = require("fs");
 var slick = require("slick");
 var _ = require("underscore");
-var bindListener = require("../util/bind_listener")
+var bindListener = require("../util/bind_listener");
+var computedStyle = require("../util/computed_style");
 var dom = require("ampersand-dom");
 
 var DepartmentOverview = module.exports = function(report, budgetPie, ratingsHistogram) {
@@ -21,6 +22,11 @@ DepartmentOverview.prototype.render = function(selector) {
   this._element = render(this._template, selector);
   this._budgetPie.render(selector + " " + this._budgetPieSelector);
   this._ratingsHistogram.render(selector + " " + this._ratingsHistogramSelector);
+  var details = slick.find(".details", this._element);
+  var budget_pie = slick.find(".budget_pie", this._element);
+  var ratings = slick.find(".ratings_histogram", this._element);
+  var ratingsHeight = budget_pie.offsetHeight - details.offsetHeight - computedStyle(ratings, "margin-top");
+  dom.setAttribute(ratings, "style", "height:"+ ratingsHeight+"px;");
 }
 
 DepartmentOverview.prototype._onChangeSelection = function(selection) {

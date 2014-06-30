@@ -29,7 +29,7 @@ RatingsHistogram.prototype._onSelectionChange = function(selection) {
 
   this._element.innerHTML = "";
   var width = this._element.offsetWidth;
-  var height = 400
+  var height = this._element.offsetHeight;
   var x = d3.scale.ordinal()
       .rangeRoundBands([0, width], .1)
       .domain([0, 1,2,3,4]);
