@@ -1,0 +1,206 @@
+{
+ "AGO": {
+  "Individuals": {
+   "digital_proportion": null, 
+   "digital_volume": null, 
+   "total_volume": 47561.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.043156324252638559, 
+   "digital_volume": 781.0, 
+   "total_volume": 18097.0
+  }
+ }, 
+ "DCLG": {
+  "Individuals": {
+   "digital_proportion": 0.74406659998823321, 
+   "digital_volume": 379407.0, 
+   "total_volume": 509910.0
+  }, 
+  "Business": {
+   "digital_proportion": 1.0, 
+   "digital_volume": 19.0, 
+   "total_volume": 19.0
+  }
+ }, 
+ "DWP": {
+  "Individuals": {
+   "digital_proportion": 0.12078343453304108, 
+   "digital_volume": 12663201.0, 
+   "total_volume": 104842200.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.90344205070231109, 
+   "digital_volume": 5690000.0, 
+   "total_volume": 6298135.0
+  }
+ }, 
+ "CO": {
+  "Individuals": {
+   "digital_proportion": 1.0, 
+   "digital_volume": 4452506.0, 
+   "total_volume": 4452506.0
+  }, 
+  "Business": {
+   "digital_proportion": 1.0, 
+   "digital_volume": 65560.0, 
+   "total_volume": 65560.0
+  }
+ }, 
+ "DFID": {
+  "Individuals": {
+   "digital_proportion": 0.0, 
+   "digital_volume": 0.0, 
+   "total_volume": 14898.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.0, 
+   "digital_volume": 0.0, 
+   "total_volume": 441.0
+  }
+ }, 
+ "DH": {
+  "Individuals": {
+   "digital_proportion": 0.30308721804861366, 
+   "digital_volume": 9503651.0, 
+   "total_volume": 31356159.0
+  }, 
+  "Business": {
+   "digital_proportion": null, 
+   "digital_volume": null, 
+   "total_volume": 628596.0
+  }
+ }, 
+ "DfT": {
+  "Individuals": {
+   "digital_proportion": 0.56315458372582883, 
+   "digital_volume": 71383941.0, 
+   "total_volume": 126757276.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.2286840738299743, 
+   "digital_volume": 386536.0, 
+   "total_volume": 1690262.0
+  }
+ }, 
+ "Defra": {
+  "Individuals": {
+   "digital_proportion": 0.35442923093176326, 
+   "digital_volume": 499876.0, 
+   "total_volume": 1410369.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.041868359617790223, 
+   "digital_volume": 882105.0, 
+   "total_volume": 21068535.0
+  }
+ }, 
+ "HMRC": {
+  "Individuals": {
+   "digital_proportion": 0.24701689540971505, 
+   "digital_volume": 10248606.0, 
+   "total_volume": 41489494.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.93497630525585951, 
+   "digital_volume": 1030748620.0, 
+   "total_volume": 1102432879.0
+  }
+ }, 
+ "DECC": {
+  "Individuals": {
+   "digital_proportion": 0.020481537438212915, 
+   "digital_volume": 8283.0, 
+   "total_volume": 404413.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.66714228357101468, 
+   "digital_volume": 525073.0, 
+   "total_volume": 787048.0
+  }
+ }, 
+ "Home Office": {
+  "Individuals": {
+   "digital_proportion": 0.048137891913588277, 
+   "digital_volume": 6050110.0, 
+   "total_volume": 125682903.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.0, 
+   "digital_volume": 0.0, 
+   "total_volume": 267384.0
+  }
+ }, 
+ "MoJ": {
+  "Individuals": {
+   "digital_proportion": 0.16226777661957439, 
+   "digital_volume": 1350593.0, 
+   "total_volume": 8323236.0
+  }, 
+  "Business": {
+   "digital_proportion": null, 
+   "digital_volume": null, 
+   "total_volume": 30475.0
+  }
+ }, 
+ "DCMS": {
+  "Individuals": {
+   "digital_proportion": null, 
+   "digital_volume": null, 
+   "total_volume": null
+  }, 
+  "Business": {
+   "digital_proportion": 0.0022283566701034358, 
+   "digital_volume": 67.0, 
+   "total_volume": 30067.0
+  }, 
+  "Charity": {
+   "digital_proportion": null, 
+   "digital_volume": null, 
+   "total_volume": 3522.0
+  }
+ }, 
+ "DfE": {
+  "Individuals": {
+   "digital_proportion": null, 
+   "digital_volume": null, 
+   "total_volume": 76913.0
+  }, 
+  "Business": {
+   "digital_proportion": null, 
+   "digital_volume": null, 
+   "total_volume": 155174.0
+  }
+ }, 
+ "MoD": {
+  "Business": {
+   "digital_proportion": 0.99162619326745938, 
+   "digital_volume": 473680.0, 
+   "total_volume": 477680.0
+  }
+ }, 
+ "BIS": {
+  "Individuals": {
+   "digital_proportion": 0.79678056217521265, 
+   "digital_volume": 3313404.0, 
+   "total_volume": 4158490.0
+  }, 
+  "Business": {
+   "digital_proportion": 0.76551162340018331, 
+   "digital_volume": 26339727.0, 
+   "total_volume": 34408004.0
+  }
+ }, 
+ "FCO": {
+  "Individuals": {
+   "digital_proportion": 0.021899269176397052, 
+   "digital_volume": 18078.0, 
+   "total_volume": 825507.0
+  }, 
+  "Business": {
+   "digital_proportion": null, 
+   "digital_volume": null, 
+   "total_volume": 18545.0
+  }
+ }
+}
