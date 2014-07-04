@@ -32,7 +32,7 @@ function setupHover() {
         name: datum.name,
         budget: "£" + datum["2013_cash_budget"] + "m",
         spend: "£" + datum["2013_cash_forecast"] + "m",
-        variance: datum["2013_percent_variance"].toFixed(1) + "%",
+        variance: Math.abs(datum["2013_percent_variance"]).toFixed(1) + "%",
         variance_direction: datum["2013_percent_variance"] > 0 ? "over" : "under"
       });
     });

@@ -63,3 +63,20 @@ rect.parent,
   background-color: white;
   padding: 1em;
 }
+
+.hover h3 {
+  font-size: 1.5em;
+}
+
+.hover .n {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.hover .under .n {
+  color: #2bab2b;
+}
+
+.hover .over .n {
+  color: #e54545;
+}
