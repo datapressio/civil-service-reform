@@ -1,77 +1,10 @@
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<title>Zoomable Treemaps</title>
-<style>
-
-html {
-  font-family: "Helvetica Neue", "Helvetica", "Verdana", sans-serif;
-}
-
-#chart {
-  width: 960px;
-  height: 500px;
-  background: #ddd;
-}
-
-text {
-  pointer-events: none;
-}
-
-text.label {
-  font-size: 0.5em;
-}
-
-.grandparent text {
-  font-weight: bold;
-}
-
-rect {
-  stroke: #fff;
-}
-
-rect.child {
-  fill: #eaeaea;
-}
-
-rect.fill {
-  stroke: none;
-}
-
-rect.parent,
-.grandparent rect {
-  stroke-width: 2px;
-}
-
-.grandparent rect {
-  fill: #eaeaea;
-}
-
-.grandparent:hover rect {
-  fill: #ddd;
-}
-
-.children rect.parent,
-.grandparent rect {
-  cursor: pointer;
-}
-
-.children rect.parent {
-  fill: none;
-}
-
-.children:hover rect.child {
-  fill: #ddd;
-}
-
-</style>
-
-<div id="chart">
-</div>
-
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
-
+var d3 = require("d3-browserify");
+var slick = require("slick");
+var _ = require("underscore");
+var events = require("dom-events");
+var style = require("dom-style");
+var fs = require("fs");
+var mustache = require("mustache");
 var colors = {
   "Green": "#2bab2b",
   "Amber/Green": "url(\"#amberGreenHatch\")",
@@ -79,6 +12,36 @@ var colors = {
   "Amber/Red": "url(\"#amberRedHatch\")",
   "Red": "#e54545"
 }
+
+var hoverTemplate = fs.readFileSync(__dirname + "/../templates/hoverbox.mustache", "utf8");
+
+function setupHover() {
+  d3.select("#chart").append("div").attr("class", "hover");
+  var hoverbox = slick.find(".hover");
+  style(hoverbox, "display", "none");
+  events.on(window, "mousemove", function(event) {
+    style(hoverbox, "left", (event.clientX + 10) + "px");
+    style(hoverbox, "top", (event.clientY + 10) + "px");
+  });
+  _.each(slick.search(".depth rect"), function(child) {
+    events.on(child, "mouseover", function(event) {
+      var id = child.id.match(/datum\-([0-9]+)/)[1]
+      var datum = window.data[id];
+      style(hoverbox, "display", "block");
+      hoverbox.innerHTML = mustache.render(hoverTemplate, {
+        name: datum.name,
+        budget: "£" + datum["2013_cash_budget"] + "m",
+        spend: "£" + datum["2013_cash_forecast"] + "m",
+        variance: datum["2013_percent_variance"].toFixed(1) + "%",
+        variance_direction: datum["2013_percent_variance"] > 0 ? "over" : "under"
+      });
+    });
+    events.on(child, "mouseout", function(event) {
+      style(hoverbox, "display", "none");
+    });
+  });
+}
+
 
 function setupPatterns() {
   var svg = d3.select("#chart").append("svg");
@@ -160,7 +123,8 @@ grandparent.append("text")
     .attr("y", 6 - margin.top)
     .attr("dy", ".75em");
 
-d3.json("major_projects_departmental_breakdown.json", function(response) {
+d3.json("/data/major_projects_departmental_breakdown.json", function(response) {
+  window.data = [];
   setupPatterns();
   root = response["Civil Service"];
   root.name = "Civil Service";
@@ -181,6 +145,8 @@ d3.json("major_projects_departmental_breakdown.json", function(response) {
   // We also take a snapshot of the original children (_children) to avoid
   // the children being overwritten when when layout is computed.
   function accumulate(d) {
+    d.id = window.data.length;
+    window.data.push(d);
     d._children = children(d);
     for(child in d._children) {
       accumulate(d._children[child]);
@@ -303,6 +269,8 @@ d3.json("major_projects_departmental_breakdown.json", function(response) {
       });
     }
 
+    setupHover();
+
     return g;
   }
 
@@ -316,7 +284,8 @@ d3.json("major_projects_departmental_breakdown.json", function(response) {
         .attr("y", function(d) { return y(d.y); })
         .attr("width", function(d) { return x(d.x + d.dx) - x(d.x); })
         .attr("height", function(d) { return y(d.y + d.dy) - y(d.y); })
-        .style("fill", function(d) { return d.color; });
+        .style("fill", function(d) { return d.color; })
+        .attr("id", function(d) { return "datum-" + d.id; });
   }
 
   function name(d) {
@@ -325,6 +294,4 @@ d3.json("major_projects_departmental_breakdown.json", function(response) {
         : d.name;
   }
 });
-
-</script>
 
