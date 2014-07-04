@@ -123,7 +123,7 @@ grandparent.append("text")
     .attr("y", 6 - margin.top)
     .attr("dy", ".75em");
 
-d3.json("../data/major_projects_departmental_breakdown.json", function(response) {
+d3.json("data/major_projects_departmental_breakdown.json", function(response) {
   window.data = [];
   setupPatterns();
   root = response["Civil Service"];
