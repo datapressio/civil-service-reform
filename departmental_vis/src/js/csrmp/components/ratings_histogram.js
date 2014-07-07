@@ -2,6 +2,8 @@ var slick = require("slick");
 var _ = require("underscore");
 var bindListener = require("../util/bind_listener");
 var d3 = require("d3-browserify");
+var Patterns = require("./Patterns")
+var colors = require("../util/colors")
 
 RatingsHistogram = module.exports = function(report) {
  this._report = report;
@@ -18,12 +20,12 @@ RatingsHistogram.prototype._onSelectionChange = function(selection) {
 
   var maxValue = _.max(data);
 
-  var colors = [
-    "#e54545",
-    "url(\"#amberRedHatch\")",
-    "#e5ba39",
-    "url(\"#amberGreenHatch\")",
-    "#2bab2b"
+  var colorNames = [
+    "Red",
+    "Amber/Red",
+    "Amber",
+    "Amber/Green",
+    "Green"
   ]
 
 
@@ -53,41 +55,8 @@ RatingsHistogram.prototype._onSelectionChange = function(selection) {
       .attr("height", height)
       .append("g")
 
-
-
-  var defs = svg.append('defs');
-  var pattern = defs.append('pattern')
-    .attr('id', 'amberGreenHatch')
-    .attr('patternUnits', 'userSpaceOnUse')
-    .attr('width', 4)
-    .attr('height', 4);
-  pattern.append('rect')
-    .attr('fill', colors[4])
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr("x", 0)
-    .attr("y", 0);
-  pattern.append('path')
-    .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-    .attr('stroke', colors[2])
-    .attr('stroke-width', 1.25);
-
-  var pattern = defs.append('pattern')
-    .attr('id', 'amberRedHatch')
-    .attr('patternUnits', 'userSpaceOnUse')
-    .attr('width', 4)
-    .attr('height', 4);
-  pattern.append('rect')
-    .attr('fill', colors[0])
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr("x", 0)
-    .attr("y", 0);
-  pattern.append('path')
-    .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-    .attr('stroke', colors[2])
-    .attr('stroke-width', 1.25);
-
+  var p = new Patterns()
+  p.render();
 
   svg.append("g")
     .attr("class", "x axis")
@@ -106,6 +75,6 @@ RatingsHistogram.prototype._onSelectionChange = function(selection) {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d); })
       .attr("height", function(d) { return height - y(d) })
-      .style("fill", function(d) {return colors[_.indexOf(data, d)]; });
+      .style("fill", function(d) {return colors[colorNames[_.indexOf(data, d)]]; });
 }
 

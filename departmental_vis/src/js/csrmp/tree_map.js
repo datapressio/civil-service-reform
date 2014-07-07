@@ -5,14 +5,8 @@ var events = require("dom-events");
 var style = require("dom-style");
 var fs = require("fs");
 var mustache = require("mustache");
-var colors = {
-  "Green": "#2bab2b",
-  "Amber/Green": "url(\"#amberGreenHatch\")",
-  "Amber": "#e5ba39",
-  "Amber/Red": "url(\"#amberRedHatch\")",
-  "Red": "#e54545"
-}
-
+var Patterns = require("./components/Patterns")
+var colors = require("./util/colors")
 var hoverTemplate = fs.readFileSync(__dirname + "/../../templates/hoverbox.mustache", "utf8");
 
 var Treemap = module.exports = function(selector) {
@@ -51,41 +45,8 @@ Treemap.prototype.render = function() {
 
 
   function setupPatterns(selector) {
-    var svg = d3.select(selector).append("svg");
-    var defs = svg.append('defs');
-    var pattern = defs.append('pattern')
-      .attr('id', 'amberGreenHatch')
-      .attr('patternUnits', 'userSpaceOnUse')
-      .attr('width', 4)
-      .attr('height', 4);
-    pattern.append('rect')
-      .attr('fill', colors.Green)
-      .attr("width", "100%")
-      .attr("height", "100%")
-      .attr("class", "fill")
-      .attr("x", 0)
-      .attr("y", 0);
-    pattern.append('path')
-      .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-      .attr('stroke', colors.Amber)
-      .attr('stroke-width', 1.25);
-
-    var pattern = defs.append('pattern')
-      .attr('id', 'amberRedHatch')
-      .attr('patternUnits', 'userSpaceOnUse')
-      .attr('width', 4)
-      .attr('height', 4);
-    pattern.append('rect')
-      .attr('fill', colors.Red)
-      .attr("width", "100%")
-      .attr("height", "100%")
-      .attr("class", "fill")
-      .attr("x", 0)
-      .attr("y", 0);
-    pattern.append('path')
-      .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-      .attr('stroke', colors.Amber)
-      .attr('stroke-width', 1.25);
+    var p = new Patterns()
+    p.render();
   };
 
   var margin = {top: 20, right: 0, bottom: 0, left: 0},

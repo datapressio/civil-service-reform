@@ -1,17 +1,13 @@
 var bindListener = require("../../util/bind_listener");
 var d3 = require("d3-browserify");
 var _  = require("underscore");
+var colors = require("../../util/colors");
+var Patterns = require("../Patterns")
 
 var NodesRenderer = module.exports = function(graph) {
   this._textColour = "#ddd";
   this._defaultColour = "#666";
-  this._ratingColourMap = {
-    "Green": "#2bab2b",
-    "Amber/Green": "url(\"#amberGreenHatch\")",
-    "Amber": "#e5ba39",
-    "Amber/Red": "url(\"#amberRedHatch\")",
-    "Red": "#e54545"
-  };
+  this._ratingColourMap = colors
   this._minSize = 40;
   this._maxSize = 150;
 
@@ -72,37 +68,8 @@ NodesRenderer.prototype.tick = function() {
 };
 
 NodesRenderer.prototype._setupPatterns = function() {
-  var defs = this._graph.svg.append('defs');
-  var pattern = defs.append('pattern')
-    .attr('id', 'amberGreenHatch')
-    .attr('patternUnits', 'userSpaceOnUse')
-    .attr('width', 4)
-    .attr('height', 4);
-  pattern.append('rect')
-    .attr('fill', this._ratingColourMap.Green)
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr("x", 0)
-    .attr("y", 0);
-  pattern.append('path')
-    .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-    .attr('stroke', this._ratingColourMap.Amber)
-    .attr('stroke-width', 1.25);
-
-  var pattern = defs.append('pattern')
-    .attr('id', 'amberRedHatch')
-    .attr('patternUnits', 'userSpaceOnUse')
-    .attr('width', 4)
-    .attr('height', 4);
-  pattern.append('rect')
-    .attr('fill', this._ratingColourMap.Red)
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr("x", 0)
-    .attr("y", 0);
-  pattern.append('path')
-    .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-    .attr('stroke', this._ratingColourMap.Amber)
-    .attr('stroke-width', 1.25);
+  var p = new Patterns();
+  p.render();
 };
+
 

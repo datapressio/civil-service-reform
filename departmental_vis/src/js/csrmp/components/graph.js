@@ -84,8 +84,6 @@ Graph.prototype.selectNode = function(node) {
   update(this._upstreamEdges, node.ascendantEdges());
   update(this._nodes, node.neighbourNodes().concat(this._upstreamNodes));
   update(this._edges, node.neighbourEdges().concat(this._upstreamEdges));
-  console.log(this._nodes)
-  console.log(this._edges)
   this._edgeRenderer.render(this.layout.links());
   this._nodeRenderer.render(this.layout.nodes());
   this.layout.start();
