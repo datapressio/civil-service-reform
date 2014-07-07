@@ -1,2 +1,8 @@
 var components = module.exports;
 components.Graph = require("./components/graph");
+components.DepartmentDropdown = require("./components/department_dropdown");
+components.DepartmentOverview = require("./components/department_overview");
+components.DepartmentsTable = require("./components/departments_table");
+components.RatingsHistogram = require("./components/ratings_histogram");
+components.BudgetPie = require("./components/budget_pie");
+components.Layout = require("./components/layout");

@@ -39,7 +39,8 @@ gulp.task("copy:data", function() {
 
 gulp.task("browserify", function() {
   browserify(jsSrc)
-    .bundle()
+    .transform("brfs")
+    .bundle({debug: true})
     .pipe(source(jsDestFile))
     .pipe(gulp.dest(jsDest));
 });

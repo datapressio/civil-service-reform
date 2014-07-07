@@ -17,6 +17,11 @@
     "vinyl-source-stream": "~0.1.1",
     "browserify": "~4.1.8",
     "d3-browserify": "~3.3.13",
-    "gulp-jshint": "~1.6.3"
+    "gulp-jshint": "~1.6.3",
+    "mustache": "~0.8.2",
+    "slick": "~1.12.1",
+    "underscore": "~1.6.0",
+    "brfs": "~1.1.1",
+    "dom-events": "~0.1.1"
   }
 }

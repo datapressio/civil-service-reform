@@ -133,6 +133,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 3, 
      "n_amber_green": 4, 
      "2013_cash_variance": -11, 
      "n_amber_red": 0, 
@@ -141,6 +142,7 @@
      "n_amber": 3, 
      "n_red": 0, 
      "total_lifebudget": 1382, 
+     "n_under_budget": 4, 
      "n": 8, 
      "2013_percent_variance": -2.777129777780225, 
      "2013_cash_budget": 364
@@ -166,6 +168,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 1, 
      "n_amber_green": 1, 
      "2013_cash_variance": 8, 
      "n_amber_red": 0, 
@@ -174,6 +177,7 @@
      "n_amber": 0, 
      "n_red": 0, 
      "total_lifebudget": 139, 
+     "n_under_budget": 0, 
      "n": 1, 
      "2013_percent_variance": 60.76923076923075, 
      "2013_cash_budget": 14
@@ -359,6 +363,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 4, 
      "n_amber_green": 1, 
      "2013_cash_variance": -125, 
      "n_amber_red": 0, 
@@ -367,6 +372,7 @@
      "n_amber": 4, 
      "n_red": 0, 
      "total_lifebudget": 94793, 
+     "n_under_budget": 3, 
      "n": 11, 
      "2013_percent_variance": -18.453780163726837, 
      "2013_cash_budget": 672
@@ -664,6 +670,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 1, 
      "n_amber_green": 2, 
      "2013_cash_variance": -91, 
      "n_amber_red": 4, 
@@ -672,6 +679,7 @@
      "n_amber": 8, 
      "n_red": 0, 
      "total_lifebudget": 4750, 
+     "n_under_budget": 6, 
      "n": 18, 
      "2013_percent_variance": -19.685220652923693, 
      "2013_cash_budget": 461
@@ -905,6 +913,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 9, 
      "n_amber_green": 5, 
      "2013_cash_variance": 40, 
      "n_amber_red": 4, 
@@ -913,6 +922,7 @@
      "n_amber": 2, 
      "n_red": 0, 
      "total_lifebudget": 4975, 
+     "n_under_budget": 0, 
      "n": 14, 
      "2013_percent_variance": 5.812869076121741, 
      "2013_cash_budget": 702
@@ -938,6 +948,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 1, 
      "n_amber_green": 0, 
      "2013_cash_variance": 7, 
      "n_amber_red": 0, 
@@ -946,6 +957,7 @@
      "n_amber": 1, 
      "n_red": 0, 
      "total_lifebudget": 445, 
+     "n_under_budget": 0, 
      "n": 1, 
      "2013_percent_variance": 13.85915492957747, 
      "2013_cash_budget": 53
@@ -971,6 +983,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 0, 
      "n_amber_green": 0, 
      "2013_cash_variance": 0, 
      "n_amber_red": 0, 
@@ -979,6 +992,7 @@
      "n_amber": 1, 
      "n_red": 0, 
      "total_lifebudget": 0, 
+     "n_under_budget": 0, 
      "n": 1, 
      "2013_percent_variance": 0, 
      "2013_cash_budget": 0
@@ -1180,6 +1194,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 3, 
      "n_amber_green": 5, 
      "2013_cash_variance": -6, 
      "n_amber_red": 2, 
@@ -1188,6 +1203,7 @@
      "n_amber": 5, 
      "n_red": 0, 
      "total_lifebudget": 83808, 
+     "n_under_budget": 3, 
      "n": 12, 
      "2013_percent_variance": -0.34610228111763386, 
      "2013_cash_budget": 1646
@@ -1293,6 +1309,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 1, 
      "n_amber_green": 2, 
      "2013_cash_variance": -82, 
      "n_amber_red": 2, 
@@ -1301,6 +1318,7 @@
      "n_amber": 0, 
      "n_red": 0, 
      "total_lifebudget": 1431, 
+     "n_under_budget": 2, 
      "n": 6, 
      "2013_percent_variance": -29.293038705950323, 
      "2013_cash_budget": 276
@@ -1342,6 +1360,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 1, 
      "n_amber_green": 1, 
      "2013_cash_variance": 15, 
      "n_amber_red": 0, 
@@ -1350,6 +1369,7 @@
      "n_amber": 1, 
      "n_red": 0, 
      "total_lifebudget": 10191, 
+     "n_under_budget": 0, 
      "n": 2, 
      "2013_percent_variance": 3.3667766480371695, 
      "2013_cash_budget": 445
@@ -1439,6 +1459,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 0, 
      "n_amber_green": 3, 
      "2013_cash_variance": -1, 
      "n_amber_red": 1, 
@@ -1447,6 +1468,7 @@
      "n_amber": 1, 
      "n_red": 0, 
      "total_lifebudget": 647, 
+     "n_under_budget": 2, 
      "n": 5, 
      "2013_percent_variance": -2.8294174581911107, 
      "2013_cash_budget": 32
@@ -1648,6 +1670,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 2, 
      "n_amber_green": 5, 
      "2013_cash_variance": 126, 
      "n_amber_red": 2, 
@@ -1656,6 +1679,7 @@
      "n_amber": 3, 
      "n_red": 0, 
      "total_lifebudget": 14373, 
+     "n_under_budget": 3, 
      "n": 12, 
      "2013_percent_variance": 5.292461437394564, 
      "2013_cash_budget": 2395
@@ -1745,6 +1769,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 1, 
      "n_amber_green": 2, 
      "2013_cash_variance": -2, 
      "n_amber_red": 0, 
@@ -1753,6 +1778,7 @@
      "n_amber": 3, 
      "n_red": 0, 
      "total_lifebudget": 576, 
+     "n_under_budget": 1, 
      "n": 5, 
      "2013_percent_variance": -2.200647249190924, 
      "2013_cash_budget": 77
@@ -1954,6 +1980,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 3, 
      "n_amber_green": 3, 
      "2013_cash_variance": -312, 
      "n_amber_red": 3, 
@@ -1962,6 +1989,7 @@
      "n_amber": 3, 
      "n_red": 0, 
      "total_lifebudget": 13421, 
+     "n_under_budget": 9, 
      "n": 12, 
      "2013_percent_variance": -13.202154155536336, 
      "2013_cash_budget": 2358
@@ -2099,6 +2127,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 0, 
      "n_amber_green": 1, 
      "2013_cash_variance": -2, 
      "n_amber_red": 2, 
@@ -2107,6 +2136,7 @@
      "n_amber": 5, 
      "n_red": 0, 
      "total_lifebudget": 1411, 
+     "n_under_budget": 2, 
      "n": 8, 
      "2013_percent_variance": -0.34067329431074544, 
      "2013_cash_budget": 322
@@ -2164,6 +2194,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 1, 
      "n_amber_green": 1, 
      "2013_cash_variance": 0, 
      "n_amber_red": 1, 
@@ -2172,6 +2203,7 @@
      "n_amber": 1, 
      "n_red": 0, 
      "total_lifebudget": 4691, 
+     "n_under_budget": 0, 
      "n": 3, 
      "2013_percent_variance": 0.9229676961306283, 
      "2013_cash_budget": 28
@@ -2229,6 +2261,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 0, 
      "n_amber_green": 2, 
      "2013_cash_variance": -111, 
      "n_amber_red": 0, 
@@ -2237,6 +2270,7 @@
      "n_amber": 1, 
      "n_red": 0, 
      "total_lifebudget": 280, 
+     "n_under_budget": 1, 
      "n": 3, 
      "2013_percent_variance": -95.83009583009583, 
      "2013_cash_budget": 115
@@ -2790,6 +2824,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 9, 
      "n_amber_green": 5, 
      "2013_cash_variance": -361, 
      "n_amber_red": 9, 
@@ -2798,6 +2833,7 @@
      "n_amber": 7, 
      "n_red": 2, 
      "total_lifebudget": 24396, 
+     "n_under_budget": 12, 
      "n": 34, 
      "2013_percent_variance": -18.92770555402823, 
      "2013_cash_budget": 1902
@@ -2823,6 +2859,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 0, 
      "n_amber_green": 0, 
      "2013_cash_variance": 0, 
      "n_amber_red": 0, 
@@ -2831,6 +2868,7 @@
      "n_amber": 0, 
      "n_red": 0, 
      "total_lifebudget": 677, 
+     "n_under_budget": 0, 
      "n": 1, 
      "2013_percent_variance": 0.0, 
      "2013_cash_budget": 0
@@ -2856,6 +2894,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 0, 
      "n_amber_green": 0, 
      "2013_cash_variance": -7, 
      "n_amber_red": 0, 
@@ -2864,6 +2903,7 @@
      "n_amber": 0, 
      "n_red": 0, 
      "total_lifebudget": 45, 
+     "n_under_budget": 1, 
      "n": 1, 
      "2013_percent_variance": -58.78649635036497, 
      "2013_cash_budget": 10
@@ -2889,6 +2929,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 0, 
      "n_amber_green": 0, 
      "2013_cash_variance": -4, 
      "n_amber_red": 0, 
@@ -2897,6 +2938,7 @@
      "n_amber": 0, 
      "n_red": 1, 
      "total_lifebudget": 398, 
+     "n_under_budget": 1, 
      "n": 1, 
      "2013_percent_variance": -9.197045508696688, 
      "2013_cash_budget": 41
@@ -3546,6 +3588,7 @@
      }
     }, 
     "summary": {
+     "n_over_budget": 10, 
      "n_amber_green": 10, 
      "2013_cash_variance": -202, 
      "n_amber_red": 6, 
@@ -3554,6 +3597,7 @@
      "n_amber": 13, 
      "n_red": 1, 
      "total_lifebudget": 135766, 
+     "n_under_budget": 18, 
      "n": 40, 
      "2013_percent_variance": -2.7765585966074697, 
      "2013_cash_budget": 7245
@@ -3561,6 +3605,7 @@
    }
   }, 
   "summary": {
+   "n_over_budget": 50, 
    "n_amber_green": 53, 
    "2013_cash_variance": -1111, 
    "n_amber_red": 36, 
@@ -3569,6 +3614,7 @@
    "n_amber": 62, 
    "n_red": 4, 
    "total_lifebudget": 398606, 
+   "n_under_budget": 68, 
    "n": 199, 
    "2013_percent_variance": -5.792883793467142, 
    "2013_cash_budget": 19170
