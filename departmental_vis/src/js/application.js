@@ -12,4 +12,9 @@ domready(function() {
     var vis = new csrmp.Visualisation("#csr-mp-vis");
     vis.render();
   }
+
+  if(slick.find("#csr-mp-treemap")) {
+    var vis = new csrmp.Treemap("#csr-mp-treemap");
+    vis.render();
+  }
 })

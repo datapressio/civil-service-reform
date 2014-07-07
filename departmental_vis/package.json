@@ -22,6 +22,8 @@
     "slick": "~1.12.1",
     "underscore": "~1.6.0",
     "brfs": "~1.1.1",
-    "dom-events": "~0.1.1"
+    "dom-events": "~0.1.1",
+    "dom-style": "0.0.2",
+    "computed-style": "~0.1.3"
   }
 }
