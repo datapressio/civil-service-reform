@@ -14063,15 +14063,28 @@ module.exports = function(object, listener) {
 
 
 },{}],40:[function(require,module,exports){
+var _  = require("underscore");
+var defaultPallete = "solid";
 var colors = module.exports =  {
-  "Green": "#2bab2b",
-  "Amber/Green": "url(\"#amberGreenHatch\")",
-  "Amber": "#e5ba39",
-  "Amber/Red": "url(\"#amberRedHatch\")",
-  "Red": "#e54545"
-}
+  hatched: {
+    "Green": "#2bab2b",
+    "Amber/Green": "url(\"#amberGreenHatch\")",
+    "Amber": "#e5ba39",
+    "Amber/Red": "url(\"#amberRedHatch\")",
+    "Red": "#e54545"
+  },
 
-},{}],41:[function(require,module,exports){
+  solid: {
+    "Green": "#2bab2b",
+    "Amber/Green": "#a6cc33",
+    "Amber": "#e5ba39",
+    "Amber/Red": "#d95f36",
+    "Red": "#e54545"
+  }
+}
+_.extend(colors, colors[defaultPallete]);
+
+},{"underscore":16}],41:[function(require,module,exports){
 module.exports = function(element, key) {
   var styles;
   if(window.getComputedStyle) {
