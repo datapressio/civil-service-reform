@@ -11,7 +11,7 @@ var colors = module.exports =  {
 
   solid: {
     "Green": "#2bab2b",
-    "Amber/Green": "#a6cc33",
+    "Amber/Green": "#91b32d",
     "Amber": "#e5ba39",
     "Amber/Red": "#d95f36",
     "Red": "#e54545"
