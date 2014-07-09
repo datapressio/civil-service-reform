@@ -6,3 +6,6 @@ components.DepartmentsTable = require("./components/departments_table");
 components.RatingsHistogram = require("./components/ratings_histogram");
 components.BudgetPie = require("./components/budget_pie");
 components.Layout = require("./components/layout");
+components.Treemap = require("./components/tree_map");
+components.Hoverbox = require("./components/hoverbox")
+

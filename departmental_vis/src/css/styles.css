@@ -180,46 +180,12 @@ h3 {
   font-size: 0.5em;
 }
 
-#csr-mp-treemap .grandparent text {
-  font-weight: bold;
-}
-
 #csr-mp-treemap rect {
   stroke: #fff;
 }
 
-#csr-mp-treemap rect.child {
+#csr-mp-treemap .child rect {
   fill: #eaeaea;
-}
-
-#csr-mp-treemap rect.fill {
-  stroke: none;
-}
-
-#csr-mp-treemap rect.parent,
-#csr-mp-treemap .grandparent rect {
-  stroke-width: 2px;
-}
-
-#csr-mp-treemap .grandparent rect {
-  fill: #eaeaea;
-}
-
-#csr-mp-treemap .grandparent:hover rect {
-  fill: #ddd;
-}
-
-#csr-mp-treemap .children rect.parent,
-#csr-mp-treemap .grandparent rect {
-  cursor: pointer;
-}
-
-#csr-mp-treemap .children rect.parent {
-  fill: none;
-}
-
-#csr-mp-treemap .children:hover rect.child {
-  fill: #ddd;
 }
 
 #csr-mp-treemap .hover {

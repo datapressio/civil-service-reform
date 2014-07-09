@@ -1,3 +1,5 @@
+var _ = require("underscore");
+
 var Department = module.exports = function(name, details, children, id) {
   this._name = name;
   this._details = details;
@@ -48,9 +50,16 @@ Department.prototype.cash_budget = function() {
 Department.prototype.cash_forecast = function() {
   return this._details["2013_cash_forecast"];
 };
-Department.prototype.cash_budget = function() {
-  return this._details["2013_cash_budget"];
-};
+
+Department.prototype.rating = function() {
+ return _.max([
+        ["Green", this.green_count()],
+        ["Amber/Green", this.amber_green_count()],
+        ["Amber", this.amber_count()],
+        ["Amber/Red", this.amber_red_count()],
+        ["Red", this.red_count()]
+     ], function(p) { return p[1] })[0];
+}
 
 //node methods
 //

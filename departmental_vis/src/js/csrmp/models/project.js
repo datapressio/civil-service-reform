@@ -8,10 +8,17 @@ Project.prototype.cash_budget = function() {
   return this._details["2013_cash_budget"];
 };
 
+Project.prototype.percent_variance = function() {
+  return this._details["2013_percent_variance"];
+};
+
+Project.prototype.cash_forecast = function() {
+  return this._details["2013_cash_forecast"];
+};
 //node methods
 //
 Project.prototype.label = function() {
-  return "";
+  return this._name;
 };
 
 Project.prototype.children = function() {
