@@ -4,7 +4,7 @@ var _ = require("underscore");
 
 var Repository = module.exports = function() {};
 
-Repository.prototype.getGraph = function(callback) {
+Repository.prototype.getDepartmentsGraph = function(callback) {
   d3.json("data/major_projects_departmental_breakdown.json", function(error, response) {
     var csData = response["Civil Service"];
     var n = 0;
@@ -24,3 +24,24 @@ Repository.prototype.getGraph = function(callback) {
   });
 };
 
+Repository.prototype.getRatingsGraph = function(callback) {
+  d3.json("data/major_projects_ratings_breakdown.json", function(error, response) {
+    var csData = response["Civil Service"];
+    var n = 0;
+    var m = 0;
+    var ratings = _.map(csData.ratings, function(ratingData, ratingName) {
+      var projects = _.map(ratingData.projects, function(projectData, projectName) {
+        p =  new models.Project(projectName, projectData, "project-"+m);
+        m++;
+        return p;
+      });
+      d = new models.Rating(ratingName, ratingData.summary, projects, "rating-" + n);
+      n++;
+      return d;
+    });
+    var cs = new models.Rating("Civil Service", csData.summary, ratings, "cs");
+    callback(new models.Tree(cs));
+  });
+};
+
+Repository.prototype.getGraph = Repository.prototype.getRatingsGraph

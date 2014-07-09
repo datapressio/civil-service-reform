@@ -52,13 +52,14 @@ Department.prototype.cash_forecast = function() {
 };
 
 Department.prototype.rating = function() {
- return _.max([
+ var rating =  _.max([
         ["Green", this.green_count()],
         ["Amber/Green", this.amber_green_count()],
         ["Amber", this.amber_count()],
         ["Amber/Red", this.amber_red_count()],
         ["Red", this.red_count()]
-     ], function(p) { return p[1] })[0];
+     ], function(p) { return p[1] });
+ if(rating[1]) return rating[0];
 }
 
 //node methods
