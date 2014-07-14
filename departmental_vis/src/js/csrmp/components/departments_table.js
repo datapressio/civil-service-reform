@@ -25,8 +25,7 @@ DepartmentsTable.prototype = {
 
   _templateParams: function() {
     return {
-      departments: _.map(this._departments, function(n) {
-        var dept =  n._root;
+      departments: _.map(this._departments, function(dept) {
         return {
           id: dept.id,
           label: dept.label(),

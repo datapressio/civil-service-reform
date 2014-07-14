@@ -14,8 +14,7 @@ RatingsHistogram.prototype.render = function(selector) {
   this._element = slick.find(selector);
 }
 
-RatingsHistogram.prototype._onSelectionChange = function(selection) {
-  dept = selection._root;
+RatingsHistogram.prototype._onSelectionChange = function(dept) {
   var data = [dept.red_count(), dept.amber_red_count(), dept.amber_count(), dept.amber_green_count(), dept.green_count()];
 
   var maxValue = _.max(data);

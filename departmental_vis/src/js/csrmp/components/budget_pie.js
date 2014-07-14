@@ -7,7 +7,7 @@ var d3 = require("d3-browserify");
 
 var BudgetPie = module.exports = function(report, parentDept) {
   this._report = report;
-  this._parentDept = parentDept._root; //FIXME
+  this._parentDept = parentDept;
   this._report.registerSelectionChangeCallback(bindListener(this, this._onSelectionChange));
 }
 
@@ -51,8 +51,7 @@ BudgetPie.prototype._initD3 = function() {
 
 }
 
-BudgetPie.prototype._onSelectionChange = function(selection) {
-  var dept = selection._root; //FIXME
+BudgetPie.prototype._onSelectionChange = function(dept) {
   this._layout.value(bindListener(this, function(d) {
     return d.dept ? dept.cash_budget() : this._parentDept.cash_budget() - dept.cash_budget();
   }));

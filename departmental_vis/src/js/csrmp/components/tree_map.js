@@ -20,7 +20,7 @@ Treemap.prototype = {
     height = this._element.offsetHeight;
 
     this._layout = d3.layout.treemap()
-      .children(function(d, depth) { return depth ? null : d._children }) //FIXME
+      .children(function(d, depth) { return depth ? null : d.children() })
       .sort(function(a, b) { return a.scale() - b.scale()})
       .ratio(height / width * this._ratioCoefficient)
       .value(function(d) { return d.scale() })

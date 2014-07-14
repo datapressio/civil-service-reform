@@ -20,7 +20,7 @@ Repository.prototype.getDepartmentsGraph = function(callback) {
       return d;
     });
     var cs = new models.Department("Civil Service", csData.summary, departments, "cs");
-    callback(new models.Tree(cs));
+    callback(cs);
   });
 };
 
@@ -40,7 +40,7 @@ Repository.prototype.getRatingsGraph = function(callback) {
       return d;
     });
     var cs = new models.Rating("Civil Service", csData.summary, ratings, "cs");
-    callback(new models.Tree(cs));
+    callback(cs);
   });
 };
 

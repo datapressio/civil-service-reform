@@ -46,8 +46,8 @@ Treemap.prototype = {
     var hoverBox = new components.Hoverbox(this);
     hoverBox.render(this._selector);
     treeMap.render(this._selector);
-    this._repo.getGraph(bindListener(this, function(graph) {
-      this.setSelection(graph._root); //FIXME
+    this._repo.getRatingsGraph(bindListener(this, function(cs) {
+      this.setSelection(cs);
     }));
   }
 }

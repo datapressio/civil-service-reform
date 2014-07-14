@@ -68,6 +68,10 @@ Department.prototype.label = function() {
   return this._name;
 };
 
+Department.prototype.key = function() {
+  return this.id;
+};
+
 Department.prototype.children = function() {
   return this._children;
 };

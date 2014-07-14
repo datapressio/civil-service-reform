@@ -29,9 +29,8 @@ DepartmentOverview.prototype.render = function(selector) {
   dom.setAttribute(ratings, "style", "height:"+ ratingsHeight+"px;");
 }
 
-DepartmentOverview.prototype._onChangeSelection = function(selection) {
-  var department = selection._root; //FIXME organize the model layer better.
-  slick.find(".name", this._element).innerHTML = selection.label();
+DepartmentOverview.prototype._onChangeSelection = function(department) {
+  slick.find(".name", this._element).innerHTML = department.label();
   slick.find(".projects_count .n", this._element).innerHTML = department.projects_count();
   slick.find(".over_budget_count .n", this._element).innerHTML = department.over_budget_count();
   slick.find(".under_budget_count .n", this._element).innerHTML = department.under_budget_count();
