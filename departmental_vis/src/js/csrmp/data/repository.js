@@ -44,4 +44,21 @@ Repository.prototype.getRatingsGraph = function(callback) {
   });
 };
 
-Repository.prototype.getGraph = Repository.prototype.getRatingsGraph
+Repository.prototype.getProjects = function(callback) {
+  d3.json("data/major_projects_departmental_breakdown.json", function(error, response) {
+    var csData = response["Civil Service"];
+    var n = 0;
+    var m = 0;
+    var projects = _.flatten(_.map(csData.departments, function(departmentData, departmentName) {
+        var d = new models.Department(departmentName, departmentData.summary, [], "department-" + n);
+      var ps =  _.map(departmentData.projects, function(projectData, projectName) {
+        var p =  new models.Project(projectName, projectData, "project-"+m, d);
+        m++;
+        return p;
+      });
+      n++;
+      return ps;
+    }));
+    callback(projects);
+  });
+}

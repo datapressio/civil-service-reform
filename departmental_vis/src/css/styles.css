@@ -188,7 +188,7 @@ h3 {
   fill: #eaeaea;
 }
 
-#csr-mp-treemap .hover {
+.hover {
   position: absolute;
   background-color: white;
   padding: 1em;
@@ -196,19 +196,28 @@ h3 {
 
 }
 
-#csr-mp-treemap .hover h3 {
+.hover h3 {
   font-size: 1.5em;
 }
 
-#csr-mp-treemap .hover .n {
+.hover .n {
   font-weight: bold;
   font-size: 2em;
 }
 
-#csr-mp-treemap .hover .under .n {
+.hover .under .n {
   color: #2bab2b;
 }
 
-#csr-mp-treemap .hover .over .n {
+.hover .over .n {
   color: #e54545;
+}
+
+#csr-mp-scatterplot {
+  width: 800px;
+  height: 450px;
+}
+
+#csr-mp-scatterplot .dot {
+  fill: #eaeaea;
 }

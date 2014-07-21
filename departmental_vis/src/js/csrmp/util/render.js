@@ -1,9 +1,11 @@
 var mustache = require("mustache");
 window.mustache = mustache;
 var slick = require("slick");
-module.exports = function(template, selector, data) {
+module.exports = function(template, selector, data, append) {
   if(!data) data = {};
   var element  = slick.find(selector);
-  element.innerHTML = mustache.render(template, data);
+  var rendered = mustache.render(template, data);
+  var content = append ? element.innerHTML + rendered : rendered;
+  element.innerHTML = content;
   return element;
 }

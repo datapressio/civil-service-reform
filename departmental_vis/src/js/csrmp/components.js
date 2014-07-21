@@ -8,4 +8,7 @@ components.BudgetPie = require("./components/budget_pie");
 components.Layout = require("./components/layout");
 components.Treemap = require("./components/tree_map");
 components.Hoverbox = require("./components/hoverbox")
+components.Scatterplot = require("./components/scatterplot")
+components.DepartmentsMultiSelect = require("./components/departments_multi_select");
+components.DashboardLayout = require("./components/dashboard_layout");
 

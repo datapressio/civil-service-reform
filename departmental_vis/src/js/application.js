@@ -17,4 +17,9 @@ domready(function() {
     var vis = new csrmp.Treemap("#csr-mp-treemap");
     vis.render();
   }
+
+  if(slick.find("#csr-mp-scatterplot")) {
+    var vis = new csrmp.Scatterplot("#csr-mp-scatterplot");
+    vis.render();
+  }
 })
