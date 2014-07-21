@@ -1,3 +1,6 @@
+var render = require("../util/render");
+var fs = require("fs");
+
 var DashboardLayout = module.exports = function(scatterplot, hoverBox, departmentsMultiSelect) {
   this._scatterplot = scatterplot;
   this._hoverBox = hoverBox;
@@ -5,9 +8,17 @@ var DashboardLayout = module.exports = function(scatterplot, hoverBox, departmen
 }
 
 DashboardLayout.prototype = {
+
+  _template: fs.readFileSync(__dirname + "/../../../templates/dashboard_layout.mustache", "utf8"),
+
+  _scatterplotSelector: ".scatterplot_container",
+  _multiselectSelector: ".multiselect_container",
+  _hoverboxSelector: ".hoverbox_container",
+
   render: function(selector) {
-    this._departmentsMultiSelect.render(selector);
-    this._hoverBox.render(selector);
-    this._scatterplot.render(selector);
+    render(this._template, selector);
+    this._scatterplot.render(selector + " " + this._scatterplotSelector);
+    this._departmentsMultiSelect.render(selector + " " + this._multiselectSelector);
+    this._hoverBox.render(selector + " " + this._hoverboxSelector);
   }
 }

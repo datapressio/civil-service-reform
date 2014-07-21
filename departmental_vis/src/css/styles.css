@@ -213,11 +213,20 @@ h3 {
   color: #e54545;
 }
 
-#csr-mp-scatterplot {
-  width: 800px;
-  height: 450px;
-}
-
 #csr-mp-scatterplot .dot {
   fill: #eaeaea;
+}
+
+.scatterplot_container {
+  min-height: 450px;
+}
+
+.departments_multi_select {
+  list-style-type: none;
+  margin: 0 0 0 2em;;
+  padding: 0;
+}
+
+.departments_multi_select li {
+  margin-bottom: 0.25em;
 }

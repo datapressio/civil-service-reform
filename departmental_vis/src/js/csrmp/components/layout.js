@@ -1,4 +1,4 @@
-var render = require("../util/render")
+var render = require("../util/render");
 var fs = require("fs");
 
 
