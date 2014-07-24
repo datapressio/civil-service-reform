@@ -11,24 +11,27 @@ var Scatterplot = module.exports = function(vis, departments) {
 }
 
 Scatterplot.prototype = {
+
+  _margin: 30,
+
   render: function(selector) {
 
    this._element = slick.find(selector);
-   this._width = this._element.offsetWidth;
-   this._height = this._element.offsetHeight;
+   this._width = this._element.offsetWidth - 2 * this._margin;
+   this._height = this._element.offsetHeight - 2 * this._margin;
 
    this._xScale = d3.scale.linear()
      .range([0, this._width])
      .domain([d3.min(this._projects, this._xValue) - 1, d3.max(this._projects, this._xValue) + 1]);
 
    this._yScale = d3.scale.linear()
-     .range([0, this._height])
+     .range([this._height, 0])
      .domain([d3.min(this._projects, this._yValue) - 1, d3.max(this._projects, this._yValue) + 1]);
 
    this._svg = d3.select(this._element).append("svg")
-      .attr("width", this._width)
-      .attr("height", this._height)
-      .append("g")
+      .attr("width", this._width + 2 * this._margin)
+      .attr("height", this._height + 2 * this._margin)
+      .append("g").attr("transform", "translate("+this._margin+","+this._margin+")")
 
    this._pointsContainer = this._svg.append("g");
 
@@ -51,14 +54,13 @@ Scatterplot.prototype = {
     this._svg.append("g")
         .attr("class", "y axis")
         .call(
-           d3.svg.axis().scale(this._yScale).orient("right")
+           d3.svg.axis().scale(this._yScale).orient("left")
         ).append("text")
         .attr("class", "label")
         .attr("transform", "rotate(-90)")
-        .attr("y", 36)
-        .attr("x",  6 - this._height)
+        .attr("y", 6)
         .attr("dy", ".71em")
-        .style("text-anchor", "start")
+        .style("text-anchor", "end")
         .text("Forecast over/under spend(%)");
 
   },
