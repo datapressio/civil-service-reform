@@ -35,12 +35,24 @@ DepartmentsMultiSelect.prototype = {
     _.each(checkboxes, bindListener(this, function(checkbox) {
       events.on(checkbox, "click", bindListener(this, this._changeSelection));
     }));
+    events.on(slick.find(".select_all", this._element), "click", bindListener(this, this._selectAll));
+    events.on(slick.find(".select_none", this._element), "click", bindListener(this, this._selectNone));
   },
 
   _changeSelection: function(event) {
     var element = event.target;
     var department = _.find(this._departments, function(d) { return d.key() == element.value});
     this._vis.toggleSelection(department);
+  },
+
+  _selectAll : function(event) {
+    event.preventDefault();
+    this._vis.addSelections(this._departments)
+  },
+
+  _selectNone : function(event) {
+    event.preventDefault();
+    this._vis.removeSelections(this._departments);
   },
 
   _templateParams: function() {

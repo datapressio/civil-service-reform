@@ -221,7 +221,7 @@ h3 {
   min-height: 450px;
 }
 
-.departments_multi_select {
+.departments_multi_select ul {
   list-style-type: none;
   margin: 0 0 0 2em;
   padding: 0;
