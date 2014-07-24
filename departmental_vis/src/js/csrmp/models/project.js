@@ -1,7 +1,8 @@
-var Project = module.exports = function(name, details, id) {
+var Project = module.exports = function(name, details, id, department) {
   this._name = name;
   this._details = details;
   this.id = id;
+  this.department = department;
 };
 
 Project.prototype.cash_budget = function() {

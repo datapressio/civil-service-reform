@@ -35,10 +35,10 @@ Scatterplot.prototype = {
     this._selectionCallbacks.push(callback);
   },
 
-  setHighlight: function(highlight) {
+  setHighlight: function(highlight, department) {
     this._highlight = highlight
     _.each(this._highlightCallbacks, bindListener(this, function(callback) {
-      callback(this._highlight)
+      callback(this._highlight, department)
     }));
   },
 

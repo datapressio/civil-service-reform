@@ -2,6 +2,15 @@ html {
   font-family: "Helvetica Neue", "Helvetica", "Verdana", sans-serif;
 }
 
+a {
+  text-decoration: underline;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 #csr-mp-vis {
   background-color: #333;
   position: absolute;
@@ -221,12 +230,57 @@ h3 {
   min-height: 450px;
 }
 
+.departments_multi_select {
+  margin-top: 20px;
+  font-size: 0.75em;
+  margin: 0 0 0 2em;
+}
+
 .departments_multi_select ul {
   list-style-type: none;
-  margin: 0 0 0 2em;
+  margin: 0;
   padding: 0;
 }
 
 .departments_multi_select li {
   margin-bottom: 0.25em;
+}
+
+.departments_multi_select label.highlighted {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.departments_multi_select .controls {
+  margin-top: 1em;
+}
+
+.departments_multi_select input[type=checkbox] {
+  display:none;
+}
+
+.departments_multi_select input[type=checkbox] + label {
+  padding-left:23px;
+  height:18px;
+  display:inline-block;
+  line-height:18px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  vertical-align:middle;
+  cursor:pointer;
+
+}
+
+.departments_multi_select input[type=checkbox]:checked + label {
+  background-position: 0 -18px;
+}
+
+.departments_multi_select label {
+  background-image:url("../img/checkbox-sprite.png");
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

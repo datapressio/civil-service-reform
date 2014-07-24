@@ -16,6 +16,7 @@ Repository.prototype.getDepartmentsGraph = function(callback) {
         return p;
       });
       d = new models.Department(departmentName, departmentData.summary, projects, "department-" + n);
+      _.each(projects, function(p) { p.department = d });//FIXME
       n++;
       return d;
     });

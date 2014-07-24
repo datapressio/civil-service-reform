@@ -86,6 +86,9 @@ Scatterplot.prototype = {
       .style("fill", function(d) { return colors[d.rating()] })
       .on("mouseover", bindListener(this, function(d) {
         this._vis.setHighlight(d);
+      }))
+      .on("mouseout", bindListener(this, function(d) {
+        this._vis.setHighlight(null);
       }));
 
     dots.exit().remove();

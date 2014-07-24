@@ -1,7 +1,6 @@
 var render = require("../util/render")
 var fs = require("fs");
 var _ = require("underscore");
-var events = require("dom-events");
 var bindListener = require("../util/bind_listener");
 var dom = require("ampersand-dom");
 var slick = require("slick");
@@ -12,6 +11,7 @@ var DepartmentsMultiSelect = module.exports = function(vis, departments) {
   this._vis = vis;
   this._departments = departments;
   this._vis.registerMultiSelectionCallback(bindListener(this, this._onSelectionChange));
+  this._vis.registerHighlightCallback(bindListener(this, this._onHighlight));
 }
 
 DepartmentsMultiSelect.prototype = {
@@ -27,6 +27,19 @@ DepartmentsMultiSelect.prototype = {
       var checkbox = document.getElementById(dept.key());
       checkbox.checked = false;
     });
+  },
+
+
+  _onHighlight: function(project) {
+    if(project) {
+      var department = project.department;
+      var element = slick.find("label[for='"+department.key()+"']", this._element);
+      dom.addClass(element, "highlighted");
+    } else {
+      _.each(slick.search("label", this._element), function(element) {
+        dom.removeClass(element, "highlighted");
+      })
+    }
   },
 
   render : function(selector) {
