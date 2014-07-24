@@ -16,6 +16,15 @@ Project.prototype.percent_variance = function() {
 Project.prototype.cash_forecast = function() {
   return this._details["2013_cash_forecast"];
 };
+
+Project.prototype.total_life_budget = function() {
+  return this._details["total_lifebudget"];
+}
+
+Project.prototype.department_commentary = function() {
+  return this._details["department_commentary"];
+}
+
 //node methods
 //
 Project.prototype.label = function() {

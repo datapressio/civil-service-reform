@@ -284,3 +284,22 @@ h3 {
   -ms-user-select: none;
   user-select: none;
 }
+
+.rating {
+  border-left-style: solid;
+  border-left-width: 12px;
+  padding-left: 12px;
+  border-left-color: transparent;
+}
+
+.rating.green { border-left-color: #2bab2b; }
+.rating.amber_green { border-left-color: #91b32d; }
+.rating.amber { border-left-color: #e5ba39; }
+.rating.amber_red { border-left-color: #d95f36; }
+.rating.red { border-left-color: #e54545; }
+
+
+.commentary {
+  font-size: 0.75em;
+}
+

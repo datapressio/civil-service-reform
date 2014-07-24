@@ -36,7 +36,11 @@ var events = require("dom-events");
         budget: "£" + selected.cash_budget() + "m",
         spend: "£" + selected.cash_forecast() + "m",
         variance: Math.abs(selected.percent_variance()).toFixed(1) + "%",
-        variance_direction: selected.percent_variance() > 0 ? "over" : "under"
+        variance_direction: selected.percent_variance() > 0 ? "over" : "under",
+        total_life_budget: "£" + selected.total_life_budget() + "m",
+        rating_class:  selected.rating() ? selected.rating().replace(new RegExp("\\s*\\/\\s*"), "_").toLowerCase() : null,
+        department_commentary: selected.department_commentary(),
+        department_name: selected.department.label(),
       });
     } else {
       style(this._element, "display", "none");
