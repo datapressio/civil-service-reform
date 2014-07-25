@@ -51,9 +51,8 @@ Scatterplot.prototype = {
       var departments = cs.children();
       var scatterplot = new components.Scatterplot(this, departments);
       var projectOverview = new components.ProjectOverview(this);
-      var hoverBox = new components.Hoverbox(this, projectOverview);
       var departmentsMultiSelect = new components.DepartmentsMultiSelect(this, departments);
-      var layout = new components.DashboardLayout(scatterplot, hoverBox, departmentsMultiSelect);
+      var layout = new components.DashboardLayout(scatterplot, projectOverview, departmentsMultiSelect);
       layout.render(this._selector);
       this.addSelections(departments);
     }));;
