@@ -84,12 +84,9 @@ Scatterplot.prototype = {
       .attr("cx", _.compose(this._xScale, this._xValue))
       .attr("cy", _.compose(this._yScale, this._yValue))
       .style("fill", function(d) { return colors[d.rating()] })
-      .on("mouseover", bindListener(this, function(d) {
+      .on("click", bindListener(this, function(d) {
         this._vis.setHighlight(d);
       }))
-      .on("mouseout", bindListener(this, function(d) {
-        this._vis.setHighlight(null);
-      }));
 
     dots.exit().remove();
 
