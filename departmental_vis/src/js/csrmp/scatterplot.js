@@ -50,7 +50,8 @@ Scatterplot.prototype = {
     this._repo.getDepartmentsGraph(bindListener(this, function(cs) {
       var departments = cs.children();
       var scatterplot = new components.Scatterplot(this, departments);
-      var hoverBox = new components.Hoverbox(this);
+      var projectOverview = new components.ProjectOverview(this);
+      var hoverBox = new components.Hoverbox(this, projectOverview);
       var departmentsMultiSelect = new components.DepartmentsMultiSelect(this, departments);
       var layout = new components.DashboardLayout(scatterplot, hoverBox, departmentsMultiSelect);
       layout.render(this._selector);
