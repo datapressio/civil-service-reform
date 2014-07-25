@@ -8,6 +8,7 @@ var Scatterplot = module.exports = function(vis, departments) {
   this._projects = _.flatten(_.map(this._departments, function(d) { return d.children(); }));
   this._vis = vis;
   this._vis.registerMultiSelectionCallback(bindListener(this, this._onSelectionChange));
+  this._vis.registerHighlightCallback(bindListener(this, bindListener(this, this._onHighlightChange)));
 }
 
 Scatterplot.prototype = {
@@ -86,10 +87,25 @@ Scatterplot.prototype = {
       .style("fill", function(d) { return colors[d.rating()] })
       .on("click", bindListener(this, function(d) {
         this._vis.setHighlight(d);
-      }))
+      }));
 
     dots.exit().remove();
+  },
 
+  _onHighlightChange: function(selection) {
+    var highlight = this._pointsContainer.selectAll(".highlight")
+      .data(_.compact([selection]), function(d) { return d.id });
+
+    highlight.enter().append("circle")
+      .attr("class", "highlight")
+      .attr("r", 14)
+      .attr("cx", _.compose(this._xScale, this._xValue))
+      .attr("cy", _.compose(this._yScale, this._yValue))
+      .style("stroke", "#333")
+      .style("stroke-width", "3px")
+      .style("fill", "none");
+
+    highlight.exit().remove();
   },
 
   _xValue: function(d) { return d.cash_budget();  },

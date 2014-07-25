@@ -31,14 +31,13 @@ DepartmentsMultiSelect.prototype = {
 
 
   _onHighlight: function(project) {
+    _.each(slick.search("label", this._element), function(element) {
+      dom.removeClass(element, "highlighted");
+    })
     if(project) {
       var department = project.department;
       var element = slick.find("label[for='"+department.key()+"']", this._element);
       dom.addClass(element, "highlighted");
-    } else {
-      _.each(slick.search("label", this._element), function(element) {
-        dom.removeClass(element, "highlighted");
-      })
     }
   },
 
