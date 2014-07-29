@@ -9,7 +9,7 @@ var fs = require("fs");
 
 var ProjectOverview = module.exports = function(vis) {
   this._vis = vis;
-  this._vis.registerHighlightCallback(bindListener(this, bindListener(this, this._onHighlightChange)));
+  this._vis.registerProjectSelectionCallback(bindListener(this, bindListener(this, this._onHighlightChange)));
 }
 
 ProjectOverview.prototype = {

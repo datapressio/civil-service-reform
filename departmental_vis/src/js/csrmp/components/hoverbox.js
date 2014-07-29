@@ -7,7 +7,7 @@ var bindListener = require("../util/bind_listener")
 var Hoverbox = module.exports = function(vis, contentComponent) {
   this._vis = vis;
   this._contentComponent = contentComponent;
-  this._vis.registerHighlightCallback(bindListener(this, bindListener(this, this._onHighlightChange)));
+  this._vis.registerProjectSelectionCallback(bindListener(this, bindListener(this, this._onHighlightChange)));
 }
 
 Hoverbox.prototype = {

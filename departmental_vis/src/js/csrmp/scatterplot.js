@@ -5,45 +5,45 @@ var bindListener = require("./util/bind_listener");
 
 var Scatterplot = module.exports = function(selector) {
   this._selector = selector;
-  this._highlight = null;
-  this._selections = [];
+  this._projectSelection = null;
+  this._departmentSelections = [];
   this._repo = new data.Repository();
-  this._highlightCallbacks = [];
-  this._selectionCallbacks = [];
+  this._projectSelectionCallbacks = [];
+  this._departmentSelectionCallbacks = [];
 }
 
 Scatterplot.prototype = {
-  removeSelections: function(removed) {
-    this._selections = _.difference(this._selections, removed);
-    _.each(this._selectionCallbacks, bindListener(this, function(callback) {
-      callback([], removed, this._selections);
+  removeDepartmentSelections: function(removed) {
+    this._departmentSelections = _.difference(this._departmentSelections, removed);
+    _.each(this._departmentSelectionCallbacks, bindListener(this, function(callback) {
+      callback([], removed, this._departmentSelections);
     }));
   },
 
-  addSelections: function(added) {
-    this._selections = _.union(this._selections, added);
-    _.each(this._selectionCallbacks, bindListener(this, function(callback) {
-      callback(added, [], this._selections);
+  addDepartmentSelections: function(added) {
+    this._departmentSelections = _.union(this._departmentSelections, added);
+    _.each(this._departmentSelectionCallbacks, bindListener(this, function(callback) {
+      callback(added, [], this._departmentSelections);
     }));
   },
 
-  toggleSelection: function(selection) {
-    _.include(this._selections, selection) ? this.removeSelections([selection]) : this.addSelections([selection]);
+  toggleDepartmentSelection: function(selection) {
+    _.include(this._departmentSelections, selection) ? this.removeDepartmentSelections([selection]) : this.addDepartmentSelections([selection]);
   },
 
-  registerMultiSelectionCallback: function(callback) {
-    this._selectionCallbacks.push(callback);
+  registerDepartmentSelectionCallback: function(callback) {
+    this._departmentSelectionCallbacks.push(callback);
   },
 
-  setHighlight: function(highlight, department) {
-    this._highlight = highlight
-    _.each(this._highlightCallbacks, bindListener(this, function(callback) {
-      callback(this._highlight, department)
+  setProjectSelection: function(projectSelection, department) {
+    this._projectSelection = projectSelection;
+    _.each(this._projectSelectionCallbacks, bindListener(this, function(callback) {
+      callback(this._projectSelection, department)
     }));
   },
 
-  registerHighlightCallback : function(callback) {
-    this._highlightCallbacks.push(callback);
+  registerProjectSelectionCallback : function(callback) {
+    this._projectSelectionCallbacks.push(callback);
   },
 
   render: function() {
@@ -54,7 +54,7 @@ Scatterplot.prototype = {
       var departmentsMultiSelect = new components.DepartmentsMultiSelect(this, departments);
       var layout = new components.DashboardLayout(scatterplot, projectOverview, departmentsMultiSelect);
       layout.render(this._selector);
-      this.addSelections(departments);
+      this.addDepartmentSelections(departments);
     }));;
   }
 }

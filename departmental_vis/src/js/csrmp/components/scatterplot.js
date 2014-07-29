@@ -7,8 +7,8 @@ var Scatterplot = module.exports = function(vis, departments) {
   this._departments = departments;
   this._projects = _.flatten(_.map(this._departments, function(d) { return d.children(); }));
   this._vis = vis;
-  this._vis.registerMultiSelectionCallback(bindListener(this, this._onSelectionChange));
-  this._vis.registerHighlightCallback(bindListener(this, bindListener(this, this._onHighlightChange)));
+  this._vis.registerDepartmentSelectionCallback(bindListener(this, this._onSelectionChange));
+  this._vis.registerProjectSelectionCallback(bindListener(this, bindListener(this, this._onHighlightChange)));
 }
 
 Scatterplot.prototype = {
@@ -86,7 +86,7 @@ Scatterplot.prototype = {
       .attr("cy", _.compose(this._yScale, this._yValue))
       .style("fill", function(d) { return colors[d.rating()] })
       .on("click", bindListener(this, function(d) {
-        this._vis.setHighlight(d);
+        this._vis.setProjectSelection(d);
       }));
 
     dots.exit().remove();

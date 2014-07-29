@@ -10,8 +10,8 @@ var events = require("dom-events");
 var DepartmentsMultiSelect = module.exports = function(vis, departments) {
   this._vis = vis;
   this._departments = departments;
-  this._vis.registerMultiSelectionCallback(bindListener(this, this._onSelectionChange));
-  this._vis.registerHighlightCallback(bindListener(this, this._onHighlight));
+  this._vis.registerDepartmentSelectionCallback(bindListener(this, this._onSelectionChange));
+  this._vis.registerProjectSelectionCallback(bindListener(this, this._onHighlight));
 }
 
 DepartmentsMultiSelect.prototype = {
@@ -54,17 +54,17 @@ DepartmentsMultiSelect.prototype = {
   _changeSelection: function(event) {
     var element = event.target;
     var department = _.find(this._departments, function(d) { return d.key() == element.value});
-    this._vis.toggleSelection(department);
+    this._vis.toggleDepartmentSelection(department);
   },
 
   _selectAll : function(event) {
     event.preventDefault();
-    this._vis.addSelections(this._departments)
+    this._vis.addDepartmentSelections(this._departments)
   },
 
   _selectNone : function(event) {
     event.preventDefault();
-    this._vis.removeSelections(this._departments);
+    this._vis.removeDepartmentSelections(this._departments);
   },
 
   _templateParams: function() {
