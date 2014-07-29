@@ -7,9 +7,11 @@ var Scatterplot = module.exports = function(selector) {
   this._selector = selector;
   this._projectSelection = null;
   this._departmentSelections = [];
+  this._departmentHighlight = null;
   this._repo = new data.Repository();
   this._projectSelectionCallbacks = [];
   this._departmentSelectionCallbacks = [];
+  this._departmentHighlightCallbacks = [];
 }
 
 Scatterplot.prototype = {
@@ -33,6 +35,17 @@ Scatterplot.prototype = {
 
   registerDepartmentSelectionCallback: function(callback) {
     this._departmentSelectionCallbacks.push(callback);
+  },
+
+  setDepartmentHighlight: function(department) {
+    this._departmentHighlight = department;
+    _.each(this._departmentHighlightCallbacks, bindListener(this, function(callback) {
+      callback(this._departmentHighlight);
+    }));
+  },
+
+  registerDepartmentHighlightCallback: function(callback) {
+    this._departmentHighlightCallbacks.push(callback);
   },
 
   setProjectSelection: function(projectSelection, department) {

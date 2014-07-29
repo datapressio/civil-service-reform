@@ -44,8 +44,13 @@ DepartmentsMultiSelect.prototype = {
   render : function(selector) {
     this._element = render(this._template, selector, this._templateParams(), true);
     var checkboxes = slick.search("input", this._element);
+    var labels = slick.search("label", this._element);
     _.each(checkboxes, bindListener(this, function(checkbox) {
       events.on(checkbox, "click", bindListener(this, this._changeSelection));
+    }));
+    _.each(labels, bindListener(this, function(label) {
+      events.on(label, "mouseover", bindListener(this, this._changeHighlight));
+      events.on(label, "mouseout", bindListener(this, this._removeHighlight));
     }));
     events.on(slick.find(".select_all", this._element), "click", bindListener(this, this._selectAll));
     events.on(slick.find(".select_none", this._element), "click", bindListener(this, this._selectNone));
@@ -55,6 +60,16 @@ DepartmentsMultiSelect.prototype = {
     var element = event.target;
     var department = _.find(this._departments, function(d) { return d.key() == element.value});
     this._vis.toggleDepartmentSelection(department);
+  },
+
+  _changeHighlight: function(event) {
+    var element = event.target;
+    var department = _.find(this._departments, function(d) { return d.key() == element.getAttribute("for")});
+    this._vis.setDepartmentHighlight(department);
+  },
+
+  _removeHighlight: function(event) {
+    this._vis.setDepartmentHighlight(null);
   },
 
   _selectAll : function(event) {
