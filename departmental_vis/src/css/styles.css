@@ -344,3 +344,8 @@ h3 {
 .tab_contents li.selected {
   display: block;
 }
+
+.legend {
+  font-size: 0.75em;
+  color: #999;
+}
