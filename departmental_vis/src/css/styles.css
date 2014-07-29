@@ -226,6 +226,10 @@ h3 {
   fill: #eaeaea;
 }
 
+#csr-mp-scatterplot .dot {
+ cursor: pointer;
+}
+
 .scatterplot_container {
   min-height: 450px;
 }
