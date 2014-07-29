@@ -18,6 +18,39 @@
     </dl>
   </div>
   <div class="pure-u-2-3">
-    <p class="commentary">{{department_commentary}}</p>
+    <ul class="tabs">
+      <li class="description">
+        Description
+      </li>
+      <li class="commentary">
+        Departmental commentary
+      </li>
+      <li class="budget_variance">
+        Budget variance
+      </li>
+      <li class="budget_life">
+        Budget life
+      </li>
+      <li class="schedule">
+        Schedule
+      </li>
+    </ul>
+    <ul class="tab_contents">
+      <li class="description">
+        {{&description}}
+      </li>
+      <li class="commentary">
+        {{&department_commentary}}
+      </li>
+      <li class="budget_variance">
+        {{&budget_variance_narrative}}
+      </li>
+      <li class="budget_life">
+        {{&budget_life_narrative}}
+      </li>
+      <li class="schedule">
+        {{&schedule_narrative}}
+      </li>
+    </ul>
   </div>
 </div>

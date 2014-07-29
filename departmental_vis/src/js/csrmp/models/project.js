@@ -21,8 +21,24 @@ Project.prototype.total_life_budget = function() {
   return this._details["total_lifebudget"];
 }
 
+Project.prototype.description = function() {
+  return this._details["description"];
+}
+
 Project.prototype.department_commentary = function() {
   return this._details["department_commentary"];
+}
+
+Project.prototype.budget_variance_narrative = function() {
+  return this._details["department_narrative_on_budget_variance"];
+}
+
+Project.prototype.budget_life_narrative = function() {
+  return this._details["department_narrative_on_budget_life"];
+}
+
+Project.prototype.schedule_narrative = function() {
+  return this._details["department_narrative_on_schedule"];
 }
 
 //node methods

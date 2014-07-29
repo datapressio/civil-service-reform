@@ -1,6 +1,10 @@
 var bindListener = require("../util/bind_listener")
+var breakLines = require("../util/break_lines")
 var render = require("../util/render")
 var slick = require("slick");
+var events = require("dom-events");
+var _ = require("underscore");
+var dom = require("ampersand-dom");
 var fs = require("fs");
 
 var ProjectOverview = module.exports = function(vis) {
@@ -17,7 +21,7 @@ ProjectOverview.prototype = {
 
   _onHighlightChange: function(selected) {
     if(selected)  {
-      render(this._template, this._selector, {
+      this._element = render(this._template, this._selector, {
         name: selected.label(),
         budget: "£" + selected.cash_budget() + "m",
         spend: "£" + selected.cash_forecast() + "m",
@@ -25,11 +29,37 @@ ProjectOverview.prototype = {
         variance_direction: selected.percent_variance() > 0 ? "over" : "under",
         total_life_budget: "£" + selected.total_life_budget() + "m",
         rating_class:  selected.rating() ? selected.rating().replace(new RegExp("\\s*\\/\\s*"), "_").toLowerCase() : null,
-        department_commentary: selected.department_commentary(),
+        description: breakLines(selected.description()),
+        budget_variance_narrative: breakLines(selected.budget_variance_narrative()),
+        budget_life_narrative: breakLines(selected.budget_life_narrative()),
+        schedule_narrative: breakLines(selected.schedule_narrative()),
+        department_commentary: breakLines(selected.department_commentary()),
         department_name: selected.department.label(),
       });
+      this._setupTabs();
     } else {
       slick.find(this._selector).innerHTML = "";
     }
+  },
+
+  _setupTabs: function() {
+    var tabs = slick.search(".tabs li", this._element);
+    var panes = slick.search(".tab_contents li", this._element);
+    _.each(_.zip(tabs, panes), function(pair) {
+      var tab = pair[0];
+      var pane = pair[1];
+      events.on(tab, "click", function() {
+         _.each(tabs, function(t) { dom.removeClass(t, "selected") });
+         _.each(panes, function(p) { dom.removeClass(p, "selected")});
+         dom.addClass(tab, "selected");
+         dom.addClass(pane, "selected");
+      });
+    });
+    dom.addClass(tabs[0], "selected");
+    dom.addClass(panes[0], "selected");
+  },
+
+  clickTab: function(event) {
+    event.preventDefault();
   }
 }

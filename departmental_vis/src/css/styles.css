@@ -303,7 +303,44 @@ h3 {
 .rating.red { border-left-color: #e54545; }
 
 
-.commentary {
-  font-size: 0.75em;
+.tabs, .tab_contents {
+  list-style-type: none;
 }
 
+.tabs {
+  font-size: 0.75em;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  float: left;
+  padding: 5px;
+  border: 1px solid #333;
+  border-bottom: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tabs li.selected {
+  cursor: default;
+  font-weight: bold;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #fff;
+}
+
+.tab_contents {
+  border-top: 1px solid #333;
+  clear: left;
+  font-size: 0.75em;
+  margin: 0;
+  padding: 0;
+}
+
+.tab_contents li {
+  display: none;
+}
+
+.tab_contents li.selected {
+  display: block;
+}
