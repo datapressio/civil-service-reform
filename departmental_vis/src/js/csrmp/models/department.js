@@ -51,6 +51,14 @@ Department.prototype.cash_forecast = function() {
   return this._details["2013_cash_forecast"];
 };
 
+Department.prototype.parent_budget_proportion = function() {
+  if(this.parent) {
+    return this.cash_budget() / this.parent.cash_budget();
+  } else {
+    return 1
+  }
+}
+
 Department.prototype.rating = function() {
  var rating =  _.max([
         ["Green", this.green_count()],

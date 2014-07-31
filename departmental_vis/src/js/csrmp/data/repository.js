@@ -21,6 +21,7 @@ Repository.prototype.getDepartmentsGraph = function(callback) {
       return d;
     });
     var cs = new models.Department("Civil Service", csData.summary, departments, "cs");
+    _.each(departments, function(d) { d.parent = cs }); //FIXME
     callback(cs);
   });
 };

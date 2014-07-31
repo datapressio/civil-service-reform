@@ -5,6 +5,7 @@
     <th class="budget">Total budget</th>
     <th class="forecast">Total forecast</th>
     <th class="variance">Over/under budget</th>
+    <th class="proportion">% of total budget</th>
   </tr>
   {{#departments}}
   <tr class="department {{id}}">
@@ -13,6 +14,7 @@
       <td class="budget">{{cash_budget}}</td>
       <td class="forecast">{{cash_forecast}}</td>
       <td class="variance">{{percent_variance}}</td>
+      <td class="proportion">{{budget_proportion}}</td>
     </tr>
   {{/departments}}
 </table>

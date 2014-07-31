@@ -32,7 +32,8 @@ DepartmentsTable.prototype = {
           projects_count: dept.projects_count(),
           cash_budget: "£" + dept.cash_budget() + "m",
           cash_forecast: "£" + dept.cash_forecast() + "m",
-          percent_variance: dept.percent_variance().toFixed(1) + "%"
+          percent_variance: dept.percent_variance().toFixed(1) + "%",
+          budget_proportion: (100 * dept.parent_budget_proportion()).toFixed(1) + "%"
         };
       })
     };
