@@ -68,14 +68,9 @@ Scatterplot.prototype = {
   },
 
   _onDepartmentSelectionChange: function(added, removed, selected) {
-    var projects = _.filter(
-      _.flatten(
-        _.map(selected,
-          function(d) { return d.children(); })
-      ), bindListener(this, function(d) {
-        return this._xValue(d) && this._yValue(d) ;
-      })
-    );
+    var projects = this._validProjects(_.flatten(_.map(selected, function(d) {
+      return d.children();
+    })));
 
     var dots = this._pointsContainer.selectAll(".dot")
       .data(projects);
@@ -97,39 +92,37 @@ Scatterplot.prototype = {
     var highlight = this._pointsContainer.selectAll(".projectSelection")
       .data(_.compact([selection]), function(d) { return d.id });
 
-    highlight.enter().append("circle")
-      .attr("class", "projectSelection")
-      .attr("r", 14)
-      .attr("cx", _.compose(this._xScale, this._xValue))
-      .attr("cy", _.compose(this._yScale, this._yValue))
-      .style("stroke", "#333")
-      .style("stroke-width", "6px")
-      .style("fill", "none");
-
+    highlight.enter().append("circle").call(this._pointHighlight("projectSeletion", 6));
     highlight.exit().remove();
   },
 
   _onDepartmentHighlightChange: function(department) {
-    //FIXME factor out duped filter with departmentSelect;
-    var projects = _.filter(department ? department.children() : [], bindListener(this, function(d) {
-        return this._xValue(d) && this._yValue(d) ;
-    }));
+    var projects = this._validProjects(department ? department.children() : []);
     var highlight = this._pointsContainer.selectAll(".highlight")
       .data(projects, function(d) { return d.id });
 
-    //FIXME factor common styling here into a call to be reused with project
     //selection
     //FIXME only highlight selected depts
-    highlight.enter().append("circle")
-      .attr("class", "highlight")
+    highlight.enter().append("circle").call(this._pointHighlight("highlight", 3));
+    highlight.exit().remove();
+  },
+
+  _validProjects: function(projects) {
+    return _.filter(projects, bindListener(this, function(d)  {
+        return this._xValue(d) && this._yValue(d) ;
+    }));
+  },
+
+  _pointHighlight: function(className, width) {
+    return bindListener(this, function(v) {
+      v.attr("class", className)
       .attr("r", 14)
       .attr("cx", _.compose(this._xScale, this._xValue))
       .attr("cy", _.compose(this._yScale, this._yValue))
       .style("stroke", "#333")
-      .style("stroke-width", "3px")
+      .style("stroke-width", width + "px")
       .style("fill", "none");
-
-    highlight.exit().remove();
+    });
   },
 
   _xValue: function(d) { return d.cash_budget();  },
