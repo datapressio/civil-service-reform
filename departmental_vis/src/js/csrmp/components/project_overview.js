@@ -18,7 +18,7 @@ ProjectOverview.prototype = {
   render : function(selector) {
     this._selector = selector;
   },
-
+//FIXME pull out rating_class to dedupe
   _onHighlightChange: function(selected) {
     if(selected)  {
       this._element = render(this._template, this._selector, {

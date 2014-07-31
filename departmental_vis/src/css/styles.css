@@ -301,6 +301,10 @@ h3 {
   border-left-color: transparent;
 }
 
+.departments_table .rating {
+  border-left-width: 6px;
+}
+
 .rating.green { border-left-color: #2bab2b; }
 .rating.amber_green { border-left-color: #91b32d; }
 .rating.amber { border-left-color: #e5ba39; }

@@ -23,6 +23,8 @@ DepartmentsTable.prototype = {
     }));
   },
 
+
+  //FIXME pull out rating_Class to dedupe
   _templateParams: function() {
     return {
       departments: _.map(this._departments, function(dept) {
@@ -33,7 +35,8 @@ DepartmentsTable.prototype = {
           cash_budget: "£" + dept.cash_budget() + "m",
           cash_forecast: "£" + dept.cash_forecast() + "m",
           percent_variance: dept.percent_variance().toFixed(1) + "%",
-          budget_proportion: (100 * dept.parent_budget_proportion()).toFixed(1) + "%"
+          budget_proportion: (100 * dept.parent_budget_proportion()).toFixed(1) + "%",
+          rating_class:  dept.rating() ? dept.rating().replace(new RegExp("\\s*\\/\\s*"), "_").toLowerCase() : null,
         };
       })
     };
