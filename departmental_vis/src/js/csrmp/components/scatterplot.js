@@ -103,7 +103,7 @@ Scatterplot.prototype = {
       .attr("cx", _.compose(this._xScale, this._xValue))
       .attr("cy", _.compose(this._yScale, this._yValue))
       .style("stroke", "#333")
-      .style("stroke-width", "3px")
+      .style("stroke-width", "6px")
       .style("fill", "none");
 
     highlight.exit().remove();
