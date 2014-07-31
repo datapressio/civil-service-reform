@@ -22,9 +22,13 @@ Scatterplot.prototype = {
    this._width = this._element.offsetWidth - 2 * this._margin;
    this._height = this._element.offsetHeight - 2 * this._margin;
 
-   this._xScale = d3.scale.linear()
-     .range([0, this._width])
-     .domain([d3.min(this._projects, this._xValue) - 1, d3.max(this._projects, this._xValue) + 1]);
+   this._xScale = d3.scale.log().clamp(true)
+     .range([1, this._width])
+     .domain([1, d3.max(this._projects, this._xValue) + 1]);
+
+     //this._xScale = d3.scale.linear()
+   //  .range([0, this._width])
+   //  .domain([d3.min(this._projects, this._xValue) - 1, d3.max(this._projects, this._xValue) + 1]);
 
    this._yScale = d3.scale.linear()
      .range([this._height, 0])
@@ -45,7 +49,10 @@ Scatterplot.prototype = {
         .attr("class", "x axis")
         .attr("transform", "translate(0," + this._yScale(0) + ")")
         .call(
-          d3.svg.axis().scale(this._xScale).orient("center")
+          d3.svg.axis().scale(this._xScale)
+            .tickFormat(this._yScale.tickFormat())
+            .tickValues([1, 2, 3, 4, 5, 10, 25, 50, 100, 250, 500, 1000])
+            .orient("center")
         ).append("text")
         .attr("class", "label")
         .attr("x", this._width)
@@ -92,7 +99,7 @@ Scatterplot.prototype = {
     var highlight = this._pointsContainer.selectAll(".projectSelection")
       .data(_.compact([selection]), function(d) { return d.id });
 
-    highlight.enter().append("circle").call(this._pointHighlight("projectSeletion", 6));
+    highlight.enter().append("circle").call(this._pointHighlight("projectSelection", 6));
     highlight.exit().remove();
   },
 
