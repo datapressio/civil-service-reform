@@ -42,6 +42,7 @@ Scatterplot.prototype = {
    this._pointsContainer = this._svg.append("g");
 
    this._renderAxes();
+   this._renderLabels();
   },
 
   _renderAxes: function() {
@@ -73,6 +74,35 @@ Scatterplot.prototype = {
         .text("Forecast over/under spend(%)");
 
   },
+
+  _renderLabels: function() {
+    this._svg.append("text")
+      .attr("y", 8)
+      .attr("x", 20)
+      .attr("class", "quadrant-label top-left")
+      .text("Low cost, over budget")
+
+    this._svg.append("text")
+      .attr("y", 8)
+      .attr("x", this._width)
+      .style("text-anchor", "end")
+      .attr("class", "quadrant-label top-right")
+      .text("High cost, over budget");
+
+    this._svg.append("text")
+      .attr("y", this._height)
+      .attr("x", 20)
+      .attr("class", "quadrant-label bottom-left")
+      .text("Low cost, under budget");
+
+    this._svg.append("text")
+      .attr("y", this._height)
+      .attr("x", this._width)
+      .style("text-anchor", "end")
+      .attr("class", "quadrant-label bottom-right")
+      .text("High cost, under budget");
+  },
+
 
   _onDepartmentSelectionChange: function(added, removed, selected) {
     var projects = this._validProjects(_.flatten(_.map(selected, function(d) {
