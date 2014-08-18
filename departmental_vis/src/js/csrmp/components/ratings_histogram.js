@@ -16,7 +16,7 @@ RatingsHistogram.prototype.render = function(selector) {
 
 RatingsHistogram.prototype._onSelectionChange = function(dept) {
   var data = [dept.red_count(), dept.amber_red_count(), dept.amber_count(), dept.amber_green_count(), dept.green_count()];
-
+  var projects = [dept.red_projects(), dept.amber_red_projects(), dept.amber_projects(), dept.amber_green_projects(), dept.green_projects()];
   var maxValue = _.max(data);
 
   var colorNames = [
@@ -36,7 +36,7 @@ RatingsHistogram.prototype._onSelectionChange = function(dept) {
       .domain([0, 1,2,3,4]);
 
   var y = d3.scale.linear()
-      .range([0, height])
+      .range([height, 0])
       .domain([0, maxValue]);
 
   var xAxis = d3.svg.axis()
@@ -73,7 +73,14 @@ RatingsHistogram.prototype._onSelectionChange = function(dept) {
       .attr("x", function(d) { return x(_.indexOf(data, d)); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d); })
-      .attr("height", function(d) { return height - y(d) })
-      .style("fill", function(d) {return colors[colorNames[_.indexOf(data, d)]]; });
+      .attr("height", function(d) { return height - y(d); })
+      .style("fill", function(d) {return colors[colorNames[_.indexOf(data, d)]]; })
+      .on("mouseover", bindListener(this, function(d) {
+        var ps = projects[_.indexOf(data, d)];
+        this._report.setProjectSelection(ps);
+      }))
+      .on("mouseout", bindListener(this, function(d) {
+        this._report.setProjectSelection(null);
+      }));
 }
 

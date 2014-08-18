@@ -41,6 +41,10 @@ Project.prototype.schedule_narrative = function() {
   return this._details["department_narrative_on_schedule"];
 }
 
+Project.prototype.projects = function() {
+  return [this];
+}
+
 //node methods
 //
 Project.prototype.label = function() {

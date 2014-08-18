@@ -27,6 +27,10 @@ Department.prototype.red_count = function() {
   return this._details["n_red"];
 }
 
+Department.prototype.projects = function() {
+  return _.flatten(_.map(this.children(), function(c) { return c.projects() }));
+}
+
 Department.prototype.projects_count = function() {
   return this._details["n"];
 };
@@ -68,6 +72,36 @@ Department.prototype.rating = function() {
         ["Red", this.red_count()]
      ], function(p) { return p[1] });
  if(rating[1]) return rating[0];
+}
+
+Department.prototype.green_projects = function() {
+  return _.filter(this.projects(), function(c) {
+    return c.rating() == "Green";
+  });
+}
+
+Department.prototype.amber_green_projects = function() {
+  return _.filter(this.projects(), function(c) {
+    return c.rating() == "Amber/Green";
+  });
+}
+
+Department.prototype.amber_projects = function() {
+  return _.filter(this.projects(), function(c) {
+    return c.rating() == "Amber";
+  });
+}
+
+Department.prototype.amber_red_projects = function() {
+  return _.filter(this.projects(), function(c) {
+    return c.rating() == "Amber/Red";
+  });
+}
+
+Department.prototype.red_projects = function() {
+  return _.filter(this.projects(), function(c) {
+    return c.rating() == "Red";
+  });
 }
 
 //node methods

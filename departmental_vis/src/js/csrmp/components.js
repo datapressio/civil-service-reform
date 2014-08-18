@@ -12,4 +12,4 @@ components.Scatterplot = require("./components/scatterplot")
 components.DepartmentsMultiSelect = require("./components/departments_multi_select");
 components.DashboardLayout = require("./components/dashboard_layout");
 components.ProjectOverview = require("./components/project_overview");
-
+components.ProjectsList = require("./components/projects_list");

@@ -7,6 +7,7 @@ var bindListener = require("../util/bind_listener")
 var Hoverbox = module.exports = function(vis, contentComponent) {
   this._vis = vis;
   this._contentComponent = contentComponent;
+  //TODO generalise observer mechanism make all message names configurable and passed in.
   this._vis.registerProjectSelectionCallback(bindListener(this, bindListener(this, this._onHighlightChange)));
 }
 
