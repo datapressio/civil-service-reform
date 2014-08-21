@@ -361,8 +361,8 @@ h3 {
 
 .quadrant-label {
   font-family: sans-serif;
-  font-size: 10px;
-  fill: #999;
+  font-size: 15px;
+  fill: #ddd;
 }
 
 .projects_list li {
