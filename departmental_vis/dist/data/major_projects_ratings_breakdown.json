@@ -259,22 +259,6 @@
       "2013_cash_variance": 0, 
       "department_narrative_on_schedule": "The programme is on track for all schools being open in new or refurbished buildings by the end of 2017 \u2013 2 years earlier than originally planned.  The 2044 date given is an estimate of the last date of the concession period of the private finance 2 delivered schools."
      }, 
-     "Broadband Delivery Programme": {
-      "rating": "Amber ", 
-      "2013_cash_forecast": 99, 
-      "description": "To ensure the rapid roll-out of broadband across the country in support of economic growth, including in rural areas.", 
-      "total_lifebudget": 529, 
-      "date_end": 1483138800000, 
-      "date_start": 1291590000000, 
-      "department_narrative_on_budget_variance": "Correct at Q2. ", 
-      "2013_cash_budget": 99, 
-      "department_commentary": "\nThe procurement process has run to schedule and all projects in the main programme are now in the delivery phase and on schedule. BDUK are focussing on the cost control measures across all projects and working with Local Bodies to manage through a Milestone to Cash process and meeting delivery timescales.\n\nBDUK will be commencing with a phase 2 procurement programme to further extend Broadband coverage in 2014.", 
-      "2013_percent_variance": 0, 
-      "Department": "DCMS", 
-      "department_narrative_on_budget_life": "Correct at Q2. Additional admin funding has since been awarded to BDUK which is reflected in the Q4 return. The costs reported in the GMPP returns are Government funding only.  Other funding sources are not covered in these figures.", 
-      "2013_cash_variance": 0, 
-      "department_narrative_on_schedule": "On schedule (as of September  2013)"
-     }, 
      "Shared Services Programme": {
       "rating": "Amber", 
       "2013_cash_forecast": 3, 
@@ -1018,52 +1002,227 @@
      "2013_cash_variance": -371, 
      "n_amber_red": 0, 
      "n_green": 0, 
-     "2013_cash_forecast": 4584, 
+     "2013_cash_forecast": 4485, 
      "n_amber": 62, 
      "n_red": 0, 
-     "total_lifebudget": 152728, 
+     "total_lifebudget": 152199, 
      "n_under_budget": 22, 
-     "n": 63, 
-     "2013_percent_variance": -7.475891164089236, 
-     "2013_cash_budget": 4955
+     "n": 62, 
+     "2013_percent_variance": -7.629079520709649, 
+     "2013_cash_budget": 4855
     }
    }, 
-   "Reset": {
+   "Data exempt under section 27 and section 43 of the Freedom of Information Act (2000)": {
     "projects": {
-     "Universal Credit Programme": {
+     "Urenco Future Options": {
       "rating": null, 
-      "2013_cash_forecast": 201, 
-      "description": "Universal Credit aims to reduce the number of workless households by reducing the financial and administrative barriers to work that exist in the current system of benefits and tax credits. It replaces the complexity of the income-related benefits system (Housing Benefit, Income Support, income-related Employment and Support Allowance, income-related Jobseeker\u2019s Allowance, Working Tax Credit and Child Tax Credit) with a single payment which supports people to find work, find more work, and find better paid work.", 
-      "total_lifebudget": null, 
+      "2013_cash_forecast": 4, 
+      "description": "The Government has adopted a policy of asset disposal where there is no longer a good case in public policy terms for continued public ownership.  On that basis, the Department of Energy and Climate Change (DECC), with commercial advice and support from the Shareholder Executive, are taking  forward preparations for a sale of HMG\u2019s one-third shareholding in Urenco, a uranium enrichment company.  A sale could realise significant proceeds which have, in part, been earmarked to capitalise the Green Investment Bank in 2014/15. The project was transferred to BIS (in the Shareholder Executive) through a Machinery of Government change in February 2013. \n\n", 
+      "total_lifebudget": 18, 
       "date_end": null, 
-      "date_start": 1321484400000, 
-      "department_narrative_on_budget_variance": "The budget provision made for Universal Credit reflects the original funding provided to the Programme in November 2010, as part of the Department\u2019s Spending Review 2010 settlement. \n\nThe reduction in forecast spend reflects the changes in the Programme delivery and migration plans in 2013-14 since the original budget was set. The forecast reflects estimates based on plans/information as at September 2013 - full year expenditure is now estimated to be c\u00a3155m.\n", 
-      "2013_cash_budget": 571, 
-      "department_commentary": "During 2013, the Programme was reset, culminating in the revised plans announced on 5 December 2013.  These plans included:\no The continued roll-out of Universal Credit to ten pathfinder sites, completed successfully on 7 April 2014 with the extension to Shotton;\no The extension of this live service to include claims from couples in summer 2014, and from families in autumn 2014, with a geographical expansion to other sites in the North West;\no The creation of a rigorous \u2018test and learn\u2019 strategy so that both qualitative and quantitative impacts of this live service shape further developments;\no In particular, shaping the work to develop an enhanced digital service, due to start in low volumes in autumn 2014, with progressive development and greater scale through 2015-16;\no With the goal of making Universal Credit available in each part of Great Britain during 2016; and with the majority of existing claims to legacy benefits then moving onto Universal Credit during 2016 and 2017.\n\nEarly claimant evaluation results have been positive, showing 90% of people making claims online. Almost two-thirds of claimants think that UC provides a better financial incentive to work.\n\nProgress has also been made against National Audit Office and Public Accounts Committee recommendations, including the strengthening of governance and reporting mechanisms, improving financial management, engaging more strongly with delivery partners, and recasting the business case to reflect the new delivery plan.\n\n", 
-      "2013_percent_variance": -64.7601133818589, 
-      "Department": "DWP", 
-      "department_narrative_on_budget_life": "The Universal Credit Business Case and whole life costs will be updated to reflect the results of \u2018test and learn\u2019 and the progressive development of plans for later years.", 
-      "2013_cash_variance": -371, 
-      "department_narrative_on_schedule": "Delivery remains on track against plans announced on 5 December (see above).\nAt the same time, to support this cultural transformation, the Department has:\n\u2022 rolled out the Claimant Commitment to all new JSA claims across the country;\n\u2022 introduced Universal Jobmatch, an online job posting and matching service for jobseekers and companies;\n\u2022 begun eleven in-work conditionality pilots to test how to best encourage claimants to progress in work\n\u2022 expanded improved access to digital services across the Jobcentre Plus network. \n\n"
+      "date_start": 1264978800000, 
+      "department_narrative_on_budget_variance": "13/14 forecast represents the estimated cost of administering the sales process, including use of expert advisers for the FY13/14 year as at September 2013. ", 
+      "2013_cash_budget": 5, 
+      "department_commentary": null, 
+      "2013_percent_variance": -30.514518593988804, 
+      "Department": "BIS", 
+      "department_narrative_on_budget_life": "Whole life costs represent the cumulative total of the annual allocated budgets and do not represent estimated spend. This will be materially lower, as a significant portion of each year's allocated budgets may be unused, and consequently rolled over. Each annual budget represents the estimated cost of administering the sales process, including use of expert advisers", 
+      "2013_cash_variance": -2, 
+      "department_narrative_on_schedule": null
      }
     }, 
     "summary": {
      "n_over_budget": 0, 
      "n_amber_green": 0, 
-     "2013_cash_variance": -371, 
+     "2013_cash_variance": -2, 
      "n_amber_red": 0, 
      "n_green": 0, 
-     "2013_cash_forecast": 201, 
+     "2013_cash_forecast": 4, 
+     "n_amber": 0, 
+     "n_red": 0, 
+     "total_lifebudget": 18, 
+     "n_under_budget": 1, 
+     "n": 1, 
+     "2013_percent_variance": -30.514518593988804, 
+     "2013_cash_budget": 5
+    }
+   }, 
+   "Data exempt under Section 35 of the Freedom of Information Act (2000)": {
+    "projects": {
+     "Green Deal": {
+      "rating": null, 
+      "2013_cash_forecast": 200, 
+      "description": "The Green Deal programme aims to promote a step change in the delivery of energy efficiency measures, supported by private capital.  The new market framework and Energy Company Obligation will help to meet legally binding carbon budgets, support seasonal energy security, tackle fuel poverty and help consumers reduce energy bills over the long term.  The programme is designed to remove financial and quality assurance barriers for consumers, stimulate demand and encourage companies to energy the market for energy efficiency in buildings.", 
+      "total_lifebudget": 10311, 
+      "date_end": 1924902000000, 
+      "date_start": 1274310000000, 
+      "department_narrative_on_budget_variance": "Not applicable as  no difference ", 
+      "2013_cash_budget": 200, 
+      "department_commentary": null, 
+      "2013_percent_variance": 0, 
+      "Department": "DECC", 
+      "department_narrative_on_budget_life": "Whole life cost represents \u00a310 billion (discounted) anticipated total capital spend via private sector investment on energy efficiency measures over the life of Green Deal and the Energy Company Obligation, plus \u00a3200 million of Government-provided incentives, with a small balance comprising scheme administration and advice services.  The whole life costs will need to be reviewed as DECC establishes a new Household Energy Efficiency Programme from 2014-15, following additional capital funding announced in the Autumn Statement 2013.", 
+      "2013_cash_variance": 0, 
+      "department_narrative_on_schedule": "The start date reflects the Coalition agreement.   Green Deal was launched on time on 28 January 2013.  Consumers were able to access Green Deal Finance from June 2013.  "
+     }
+    }, 
+    "summary": {
+     "n_over_budget": 0, 
+     "n_amber_green": 0, 
+     "2013_cash_variance": 0, 
+     "n_amber_red": 0, 
+     "n_green": 0, 
+     "2013_cash_forecast": 200, 
+     "n_amber": 0, 
+     "n_red": 0, 
+     "total_lifebudget": 10311, 
+     "n_under_budget": 0, 
+     "n": 1, 
+     "2013_percent_variance": 0, 
+     "2013_cash_budget": 200
+    }
+   }, 
+   "Amber ": {
+    "projects": {
+     "Broadband Delivery Programme": {
+      "rating": "Amber ", 
+      "2013_cash_forecast": 99, 
+      "description": "To ensure the rapid roll-out of broadband across the country in support of economic growth, including in rural areas.", 
+      "total_lifebudget": 529, 
+      "date_end": 1483138800000, 
+      "date_start": 1291590000000, 
+      "department_narrative_on_budget_variance": "Correct at Q2. ", 
+      "2013_cash_budget": 99, 
+      "department_commentary": "\nThe procurement process has run to schedule and all projects in the main programme are now in the delivery phase and on schedule. BDUK are focussing on the cost control measures across all projects and working with Local Bodies to manage through a Milestone to Cash process and meeting delivery timescales.\n\nBDUK will be commencing with a phase 2 procurement programme to further extend Broadband coverage in 2014.", 
+      "2013_percent_variance": 0, 
+      "Department": "DCMS", 
+      "department_narrative_on_budget_life": "Correct at Q2. Additional admin funding has since been awarded to BDUK which is reflected in the Q4 return. The costs reported in the GMPP returns are Government funding only.  Other funding sources are not covered in these figures.", 
+      "2013_cash_variance": 0, 
+      "department_narrative_on_schedule": "On schedule (as of September  2013)"
+     }
+    }, 
+    "summary": {
+     "n_over_budget": 0, 
+     "n_amber_green": 0, 
+     "2013_cash_variance": 0, 
+     "n_amber_red": 0, 
+     "n_green": 0, 
+     "2013_cash_forecast": 99, 
+     "n_amber": 0, 
+     "n_red": 0, 
+     "total_lifebudget": 529, 
+     "n_under_budget": 0, 
+     "n": 1, 
+     "2013_percent_variance": 0.0, 
+     "2013_cash_budget": 99
+    }
+   }, 
+   "Date exempt under section 43 of the Freedom of Information Act (2000)": {
+    "projects": {
+     "Police ICT Company Programme": {
+      "rating": "Date exempt under section 43 of the Freedom of Information Act (2000)", 
+      "2013_cash_forecast": null, 
+      "description": "In July 2011, the Home Secretary announced a fundamental reform to the way ICT is managed in the police forces with the establishment of a police-led ICT company.\nThe reform is aimed at achieving four strategic objectives:\n1. To free chief officers and police staff to focus on fighting crime and making their communities safer\n2. To provide the British police service with more effective and innovative ICT support\n3. To improve value for money from ICT services \n4. To ensure services and products support forces and other customers in their drive for interoperability.", 
+      "total_lifebudget": null, 
+      "date_end": null, 
+      "date_start": 1314831600000, 
+      "department_narrative_on_budget_variance": null, 
+      "2013_cash_budget": null, 
+      "department_commentary": null, 
+      "2013_percent_variance": null, 
+      "Department": "HO", 
+      "department_narrative_on_budget_life": null, 
+      "2013_cash_variance": null, 
+      "department_narrative_on_schedule": null
+     }
+    }, 
+    "summary": {
+     "n_over_budget": 1, 
+     "n_amber_green": 0, 
+     "2013_cash_variance": 0, 
+     "n_amber_red": 0, 
+     "n_green": 0, 
+     "2013_cash_forecast": 0, 
      "n_amber": 0, 
      "n_red": 0, 
      "total_lifebudget": 0, 
-     "n_under_budget": 1, 
+     "n_under_budget": 0, 
      "n": 1, 
-     "2013_percent_variance": -64.7601133818589, 
-     "2013_cash_budget": 571
+     "2013_percent_variance": 0, 
+     "2013_cash_budget": 0
     }
    }, 
-   "NoDCA": {
+   "Exempt under Section 43(2) of the Freedom of Information Act (2000)": {
+    "projects": {
+     "Spearfish Upgrade (SFU) Programme": {
+      "rating": null, 
+      "2013_cash_forecast": null, 
+      "description": "SFU Project has 4 key outputs:\n1. Single Fuel \u2013 Create a single fuel weapon to replace the current bi-propellant system;\n2. Insensitive Munition (IM) Warhead. Replacement of the current warhead with an IM warhead before the existing warheads start to reach their end of life;\n3. Digital Weapon \u2013 Digitisation of the weapon to deliver the software integrity improvements necessary to comply with the modern standard for systematic safety integrity;\n4. Fibre Optic Guide-fibre \u2013 The replacement guidance link will remove the communication delays between the platform and the weapon, thereby enabling safety and capability improvements and replacing the existing Copper/Cadmium (Cu/Cd) wire.  ", 
+      "total_lifebudget": null, 
+      "date_end": 1672441200000, 
+      "date_start": 1207004400000, 
+      "department_narrative_on_budget_variance": null, 
+      "2013_cash_budget": null, 
+      "department_commentary": "The delivery confidence rating reflects the delays in placing the contract for the next phase of the project. All options are being analysed prior to establishing a new baseline.", 
+      "2013_percent_variance": 0, 
+      "Department": "MOD", 
+      "department_narrative_on_budget_life": null, 
+      "2013_cash_variance": 0, 
+      "department_narrative_on_schedule": null
+     }
+    }, 
+    "summary": {
+     "n_over_budget": 0, 
+     "n_amber_green": 0, 
+     "2013_cash_variance": 0, 
+     "n_amber_red": 0, 
+     "n_green": 0, 
+     "2013_cash_forecast": 0, 
+     "n_amber": 0, 
+     "n_red": 0, 
+     "total_lifebudget": 0, 
+     "n_under_budget": 0, 
+     "n": 1, 
+     "2013_percent_variance": 0, 
+     "2013_cash_budget": 0
+    }
+   }, 
+   "Exempt - Section 43(2) of Freedom of Information Act 2000 (Prejudice to Commercial Interests) ": {
+    "projects": {
+     "Rehabilitation Programme": {
+      "rating": null, 
+      "2013_cash_forecast": null, 
+      "description": "The aim of the Rehabilitation Programme is to open up rehabilitation services to a more diverse market of private and voluntary sector providers, and introduce payment by results to reward providers for their success in reducing re-offending. The efficiencies generated by these reforms will allow us to extend the provision of rehabilitation support to offenders who serve a custodial sentence of less than 12 months for the first time.", 
+      "total_lifebudget": null, 
+      "date_end": null, 
+      "date_start": 1352070000000, 
+      "department_narrative_on_budget_variance": "Not applicable.", 
+      "2013_cash_budget": null, 
+      "department_commentary": null, 
+      "2013_percent_variance": null, 
+      "Department": "MoJ", 
+      "department_narrative_on_budget_life": "Not applicable.", 
+      "2013_cash_variance": null, 
+      "department_narrative_on_schedule": null
+     }
+    }, 
+    "summary": {
+     "n_over_budget": 1, 
+     "n_amber_green": 0, 
+     "2013_cash_variance": 0, 
+     "n_amber_red": 0, 
+     "n_green": 0, 
+     "2013_cash_forecast": 0, 
+     "n_amber": 0, 
+     "n_red": 0, 
+     "total_lifebudget": 0, 
+     "n_under_budget": 0, 
+     "n": 1, 
+     "2013_percent_variance": 0, 
+     "2013_cash_budget": 0
+    }
+   }, 
+   "No DCA": {
     "projects": {
      "Royal National Orthopaedic Hospital (RNOH) NHS Trust PFI Project": {
       "rating": "No DCA", 
@@ -1210,125 +1369,7 @@
      "2013_cash_budget": 117
     }
    }, 
-   "DataexemptunderSection35oftheFreedomofInformationAct(2000)": {
-    "projects": {
-     "Green Deal": {
-      "rating": null, 
-      "2013_cash_forecast": 200, 
-      "description": "The Green Deal programme aims to promote a step change in the delivery of energy efficiency measures, supported by private capital.  The new market framework and Energy Company Obligation will help to meet legally binding carbon budgets, support seasonal energy security, tackle fuel poverty and help consumers reduce energy bills over the long term.  The programme is designed to remove financial and quality assurance barriers for consumers, stimulate demand and encourage companies to energy the market for energy efficiency in buildings.", 
-      "total_lifebudget": 10311, 
-      "date_end": 1924902000000, 
-      "date_start": 1274310000000, 
-      "department_narrative_on_budget_variance": "Not applicable as  no difference ", 
-      "2013_cash_budget": 200, 
-      "department_commentary": null, 
-      "2013_percent_variance": 0, 
-      "Department": "DECC", 
-      "department_narrative_on_budget_life": "Whole life cost represents \u00a310 billion (discounted) anticipated total capital spend via private sector investment on energy efficiency measures over the life of Green Deal and the Energy Company Obligation, plus \u00a3200 million of Government-provided incentives, with a small balance comprising scheme administration and advice services.  The whole life costs will need to be reviewed as DECC establishes a new Household Energy Efficiency Programme from 2014-15, following additional capital funding announced in the Autumn Statement 2013.", 
-      "2013_cash_variance": 0, 
-      "department_narrative_on_schedule": "The start date reflects the Coalition agreement.   Green Deal was launched on time on 28 January 2013.  Consumers were able to access Green Deal Finance from June 2013.  "
-     }
-    }, 
-    "summary": {
-     "n_over_budget": 0, 
-     "n_amber_green": 0, 
-     "2013_cash_variance": 0, 
-     "n_amber_red": 0, 
-     "n_green": 0, 
-     "2013_cash_forecast": 200, 
-     "n_amber": 0, 
-     "n_red": 0, 
-     "total_lifebudget": 10311, 
-     "n_under_budget": 0, 
-     "n": 1, 
-     "2013_percent_variance": 0, 
-     "2013_cash_budget": 200
-    }
-   }, 
-   "ExemptunderSection43oftheFreedomofInformationAct(2000)": {
-    "projects": {
-     "MARSHALL": {
-      "rating": null, 
-      "2013_cash_forecast": 1, 
-      "description": "MARSHALL aims to provide a Terminal Air Traffic Management capability for Defence.  The capability will be delivered by a Service Provider and will be provided at all agreed MOD aerodromes and Air Weapons Ranges.  An agreed level of deployable capability will also be provided.", 
-      "total_lifebudget": null, 
-      "date_end": 1601766000000, 
-      "date_start": 1144018800000, 
-      "department_narrative_on_budget_variance": "The programme is being driven hard to deliver against an aggressive schedule to ensure contract award in early 2015. This has required elements of the technical support and assurance work to be brought forward which has resulted in the variance.", 
-      "2013_cash_budget": 1, 
-      "department_commentary": "Significant progress has been made with Marshall, as captured during the last Major Projects Authority (MPA) review.  In order to accord with best practice a specific Programme Board has been established with the Senior Responsible Owner (SRO) as Chair.  Additionally, all major milestones have been met since the Q2 Government Major Projects Portfolio (GMPP) report.", 
-      "2013_percent_variance": 12.977099236641216, 
-      "Department": "MOD", 
-      "department_narrative_on_budget_life": null, 
-      "2013_cash_variance": 0, 
-      "department_narrative_on_schedule": "Work is underway and on-schedule to reach the Main Gate and Contract Award in early 2015."
-     }, 
-     "CROWSNEST programme": {
-      "rating": null, 
-      "2013_cash_forecast": 3, 
-      "description": "The CROWSNEST project will replace the capability currently provided by the Sea King Mk7 Airborne Surveillance and Control (SKASaC) aircraft.  The primary purpose of this capability is to provide Force Protection for Maritime Task Groups and their forward deployed Task Elements, including wide area surveillance overland and in the Littoral (SKASaC is currently deployed on Op HERRICK).  The CROWSNEST ASaC capability will now be delivered as role-fit mission system equipment for installation into the Merlin Mk2 aircraft.", 
-      "total_lifebudget": null, 
-      "date_end": 1664492400000, 
-      "date_start": 1364684400000, 
-      "department_narrative_on_budget_variance": "As part of the work to accelerate the CROWSNEST programme, spend in FY13/14 has increased in comparison to the original budget.", 
-      "2013_cash_budget": 2, 
-      "department_commentary": "No comment", 
-      "2013_percent_variance": 75.5, 
-      "Department": "MOD", 
-      "department_narrative_on_budget_life": null, 
-      "2013_cash_variance": 1, 
-      "department_narrative_on_schedule": "The Department has accelerated the CROWSNEST Programme, the detailed project schedule is subject to ongoing work."
-     }, 
-     "Logistics Commodities Services Transformation": {
-      "rating": null, 
-      "2013_cash_forecast": 7, 
-      "description": "The rationale for LCS(T) is built around the need for a future operating structure that adopts the core fundamentals;\n\n- A first principle of certainty of Military supply and;\n\n- A secondary principle of cost minimisation.\n\nThe scope includes all activity that the LCS Operating Centre is currently responsible for with the exception of British Forces Post Office (BFPO), Disposal Services Agency, Bulk Fuels, Blood Products and Medical Counter Measures. \n\nThe activity within scope falls into four broad areas - 1. supply chain integration, 2. commodity procurement and inventory management 3. storage of 'non explosive' stock items and 4. distribution of 'non-explosives' and munitions", 
-      "total_lifebudget": null, 
-      "date_end": 1517439600000, 
-      "date_start": 1312153200000, 
-      "department_narrative_on_budget_variance": null, 
-      "2013_cash_budget": 7, 
-      "department_commentary": "Having released the Invitation to Negotiate (ITN) at the end of December 2013 the project team have been able to commence the formal engagement/negotiation with the commercial bidders. The process is progressing well. \n\nIn parallel to the negotiation process further actions have been taken to ensure greater delivery confidence. These actions include; \n\n- the implementation of an improved integrated approvals and assurance process across MOD, HMT and Cabinet Office; \n- strengthening of the governance structure to include other government departments that will be key decision makers in the process (the establishment of a Sponsoring Group, a senior level governance group Chaired by the MOD with representation from HMT and Cabinet Office); \n- enhancement of the team developing the in-house proposal to ensure that the output produced reflects the best that can be achieved within the public sector framework.", 
-      "2013_percent_variance": 0, 
-      "Department": "MOD", 
-      "department_narrative_on_budget_life": null, 
-      "2013_cash_variance": 0, 
-      "department_narrative_on_schedule": "No change"
-     }, 
-     "Type 26 Global Combat Ship (T26 GCS)": {
-      "rating": null, 
-      "2013_cash_forecast": 82, 
-      "description": "T26 Single Statement of User Need is to deliver: An interoperable, survivable, available and adaptable capability that is operable globally within the maritime Battle Space to contribute to sea control for the Joint Force and contribute to maritime force protection with the flexibility to operate across and within the range and scale of operations.\n\nCurrent planning assumption is that 13 T26 GCS will be procured in order to replace the T23 Frigates on a 1 for 1 basis.\n\nJoint Assessment Phase Mission is to develop and cost an affordable T26 solution and in-service support model that meets the capability requirements, with the evidence to achieve MOD and corporate approvals, enabling the successful transition of the programme to the Design, Manufacturing and Support phase in 2014.", 
-      "total_lifebudget": null, 
-      "date_end": null, 
-      "date_start": 1216594800000, 
-      "department_narrative_on_budget_variance": "The in-year variance was due to lower than anticipated cost for engaging with current equipment suppliers to pass information to BAE and a slow build up of the industry project team.", 
-      "2013_cash_budget": 87, 
-      "department_commentary": "A recent review affirmed that successful delivery of T26 GCS appeared feasible but significant issues existed which required management attention.   The Review resulted in a number of recommendations which are in the process of being implemented at Programme and Project level.  The overall assessment was that the issues should be resolvable at this stage of the programme and if addressed promptly, should not present a cost/schedule overrun.", 
-      "2013_percent_variance": -5.643961076130501, 
-      "Department": "MOD", 
-      "department_narrative_on_budget_life": "T26 is being designed to cost within the overall budgeted cost.", 
-      "2013_cash_variance": -5, 
-      "department_narrative_on_schedule": "T26 remains in its Assessment Phase, maturing the design and driving down costs ahead of the main investment decision towards the end of 2014.  The Project remains on track to replace the T23 Frigates as soon as possible after 2020."
-     }
-    }, 
-    "summary": {
-     "n_over_budget": 2, 
-     "n_amber_green": 0, 
-     "2013_cash_variance": -4, 
-     "n_amber_red": 0, 
-     "n_green": 0, 
-     "2013_cash_forecast": 94, 
-     "n_amber": 0, 
-     "n_red": 0, 
-     "total_lifebudget": 0, 
-     "n_under_budget": 1, 
-     "n": 4, 
-     "2013_percent_variance": -3.3231083844580636, 
-     "2013_cash_budget": 97
-    }
-   }, 
-   "ExemptunderSection24oftheFreedomofInformationAct(2000)": {
+   "Exempt under Section 24 of the Freedom of Information Act (2000)": {
     "projects": {
      "Nuclear Warhead Capability Sustainment Programme": {
       "rating": null, 
@@ -1361,76 +1402,6 @@
      "n": 1, 
      "2013_percent_variance": -5.3337574308465125, 
      "2013_cash_budget": 911
-    }
-   }, 
-   "Dateexemptundersection43oftheFreedomofInformationAct(2000)": {
-    "projects": {
-     "Police ICT Company Programme": {
-      "rating": "Date exempt under section 43 of the Freedom of Information Act (2000)", 
-      "2013_cash_forecast": null, 
-      "description": "In July 2011, the Home Secretary announced a fundamental reform to the way ICT is managed in the police forces with the establishment of a police-led ICT company.\nThe reform is aimed at achieving four strategic objectives:\n1. To free chief officers and police staff to focus on fighting crime and making their communities safer\n2. To provide the British police service with more effective and innovative ICT support\n3. To improve value for money from ICT services \n4. To ensure services and products support forces and other customers in their drive for interoperability.", 
-      "total_lifebudget": null, 
-      "date_end": null, 
-      "date_start": 1314831600000, 
-      "department_narrative_on_budget_variance": null, 
-      "2013_cash_budget": null, 
-      "department_commentary": null, 
-      "2013_percent_variance": null, 
-      "Department": "HO", 
-      "department_narrative_on_budget_life": null, 
-      "2013_cash_variance": null, 
-      "department_narrative_on_schedule": null
-     }
-    }, 
-    "summary": {
-     "n_over_budget": 1, 
-     "n_amber_green": 0, 
-     "2013_cash_variance": 0, 
-     "n_amber_red": 0, 
-     "n_green": 0, 
-     "2013_cash_forecast": 0, 
-     "n_amber": 0, 
-     "n_red": 0, 
-     "total_lifebudget": 0, 
-     "n_under_budget": 0, 
-     "n": 1, 
-     "2013_percent_variance": 0, 
-     "2013_cash_budget": 0
-    }
-   }, 
-   "ExemptunderSection26oftheFreedomofInformationAct(2000)": {
-    "projects": {
-     "End Crypto Units (ECU)": {
-      "rating": null, 
-      "2013_cash_forecast": 27, 
-      "description": "To support the Department's information assurance capability.", 
-      "total_lifebudget": 188, 
-      "date_end": 2229980400000, 
-      "date_start": 1188514800000, 
-      "department_narrative_on_budget_variance": null, 
-      "2013_cash_budget": 27, 
-      "department_commentary": null, 
-      "2013_percent_variance": -1.6540812657317667, 
-      "Department": "MOD", 
-      "department_narrative_on_budget_life": "Budgetary alignment maintained.", 
-      "2013_cash_variance": -1, 
-      "department_narrative_on_schedule": null
-     }
-    }, 
-    "summary": {
-     "n_over_budget": 0, 
-     "n_amber_green": 0, 
-     "2013_cash_variance": -1, 
-     "n_amber_red": 0, 
-     "n_green": 0, 
-     "2013_cash_forecast": 27, 
-     "n_amber": 0, 
-     "n_red": 0, 
-     "total_lifebudget": 188, 
-     "n_under_budget": 1, 
-     "n": 1, 
-     "2013_percent_variance": -1.6540812657317414, 
-     "2013_cash_budget": 27
     }
    }, 
    "Amber/Red": {
@@ -1787,22 +1758,6 @@
       "2013_cash_variance": -59, 
       "department_narrative_on_schedule": "The new initiatives added to the Programme, and resulting scope change, along with dependencies with other programmes has resulted in a change to the delivery schedule, moving the end date of the Programme to 2016. New initiatives added to the Programme will deliver further fraud, error and debt savings for the taxpayer."
      }, 
-     "Emergency Services Mobile Communications Programme (ESMCP)": {
-      "rating": "Amber/ Red", 
-      "2013_cash_forecast": 10, 
-      "description": "The two primary aims of this programme are to:\n- Deliver modern, cost effective, resilient and interoperable mobile voice and data services as required by operational elements of the emergency services, with appropriate levels of confidentiality for the traffic carried fit for purpose for at least the period 2020 - 2030; and \n- Ensure a smooth transition from Airwave to the new service(s).  ", 
-      "total_lifebudget": 16, 
-      "date_end": 1609369200000, 
-      "date_start": 1306882800000, 
-      "department_narrative_on_budget_variance": "The overspend reflects strengthening of the Programme team to meet the accelerated plan approved by the June 2013 Programme Board. A revised envelope has now been agreed with the Portfolio and Investment Committee and spend is within profile.", 
-      "2013_cash_budget": 6, 
-      "department_commentary": "The rating reflected the pace, scale and complexity involved in delivering this cross government Programme.  The actions we have taken to mitigate the RAG status are as follows;  the Programme strengthened the team, resolved contracting and funding issues with stakeholders, carried out external readiness reviews and gained OBC approval from the emergency services, lead departments, CO and Treasury, to allow the procurement phase to be launched 14 Apr 2014. ", 
-      "2013_percent_variance": 50.146627565982406, 
-      "Department": "HO", 
-      "department_narrative_on_budget_life": "Whole life costs will be developed in due course once the final scope of the programme has been agreed.", 
-      "2013_cash_variance": 3, 
-      "department_narrative_on_schedule": "The Programme team are working to the accelerated plan approved by the June 2013 Programme Board to procure a new service provider by 2015. The Programme is on track to deliver as scheduled."
-     }, 
      "Seasonal Flu Extension to Children Programme": {
       "rating": "Amber/Red", 
       "2013_cash_forecast": 34, 
@@ -2029,89 +1984,172 @@
      }
     }, 
     "summary": {
-     "n_over_budget": 11, 
+     "n_over_budget": 10, 
      "n_amber_green": 0, 
-     "2013_cash_variance": -169, 
+     "2013_cash_variance": -173, 
      "n_amber_red": 36, 
      "n_green": 0, 
-     "2013_cash_forecast": 2726, 
+     "2013_cash_forecast": 2716, 
      "n_amber": 0, 
      "n_red": 0, 
-     "total_lifebudget": 81727, 
+     "total_lifebudget": 81711, 
      "n_under_budget": 12, 
-     "n": 37, 
-     "2013_percent_variance": -5.823327505524631, 
-     "2013_cash_budget": 2895
+     "n": 36, 
+     "2013_percent_variance": -5.955478848606793, 
+     "2013_cash_budget": 2888
     }
    }, 
-   "Dataexemptundersection27andsection43oftheFreedomofInformationAct(2000)": {
+   "Exempt under Section 43 of the Freedom of Information Act (2000)": {
     "projects": {
-     "Urenco Future Options": {
+     "MARSHALL": {
       "rating": null, 
-      "2013_cash_forecast": 4, 
-      "description": "The Government has adopted a policy of asset disposal where there is no longer a good case in public policy terms for continued public ownership.  On that basis, the Department of Energy and Climate Change (DECC), with commercial advice and support from the Shareholder Executive, are taking  forward preparations for a sale of HMG\u2019s one-third shareholding in Urenco, a uranium enrichment company.  A sale could realise significant proceeds which have, in part, been earmarked to capitalise the Green Investment Bank in 2014/15. The project was transferred to BIS (in the Shareholder Executive) through a Machinery of Government change in February 2013. \n\n", 
-      "total_lifebudget": 18, 
+      "2013_cash_forecast": 1, 
+      "description": "MARSHALL aims to provide a Terminal Air Traffic Management capability for Defence.  The capability will be delivered by a Service Provider and will be provided at all agreed MOD aerodromes and Air Weapons Ranges.  An agreed level of deployable capability will also be provided.", 
+      "total_lifebudget": null, 
+      "date_end": 1601766000000, 
+      "date_start": 1144018800000, 
+      "department_narrative_on_budget_variance": "The programme is being driven hard to deliver against an aggressive schedule to ensure contract award in early 2015. This has required elements of the technical support and assurance work to be brought forward which has resulted in the variance.", 
+      "2013_cash_budget": 1, 
+      "department_commentary": "Significant progress has been made with Marshall, as captured during the last Major Projects Authority (MPA) review.  In order to accord with best practice a specific Programme Board has been established with the Senior Responsible Owner (SRO) as Chair.  Additionally, all major milestones have been met since the Q2 Government Major Projects Portfolio (GMPP) report.", 
+      "2013_percent_variance": 12.977099236641216, 
+      "Department": "MOD", 
+      "department_narrative_on_budget_life": null, 
+      "2013_cash_variance": 0, 
+      "department_narrative_on_schedule": "Work is underway and on-schedule to reach the Main Gate and Contract Award in early 2015."
+     }, 
+     "CROWSNEST programme": {
+      "rating": null, 
+      "2013_cash_forecast": 3, 
+      "description": "The CROWSNEST project will replace the capability currently provided by the Sea King Mk7 Airborne Surveillance and Control (SKASaC) aircraft.  The primary purpose of this capability is to provide Force Protection for Maritime Task Groups and their forward deployed Task Elements, including wide area surveillance overland and in the Littoral (SKASaC is currently deployed on Op HERRICK).  The CROWSNEST ASaC capability will now be delivered as role-fit mission system equipment for installation into the Merlin Mk2 aircraft.", 
+      "total_lifebudget": null, 
+      "date_end": 1664492400000, 
+      "date_start": 1364684400000, 
+      "department_narrative_on_budget_variance": "As part of the work to accelerate the CROWSNEST programme, spend in FY13/14 has increased in comparison to the original budget.", 
+      "2013_cash_budget": 2, 
+      "department_commentary": "No comment", 
+      "2013_percent_variance": 75.5, 
+      "Department": "MOD", 
+      "department_narrative_on_budget_life": null, 
+      "2013_cash_variance": 1, 
+      "department_narrative_on_schedule": "The Department has accelerated the CROWSNEST Programme, the detailed project schedule is subject to ongoing work."
+     }, 
+     "Logistics Commodities Services Transformation": {
+      "rating": null, 
+      "2013_cash_forecast": 7, 
+      "description": "The rationale for LCS(T) is built around the need for a future operating structure that adopts the core fundamentals;\n\n- A first principle of certainty of Military supply and;\n\n- A secondary principle of cost minimisation.\n\nThe scope includes all activity that the LCS Operating Centre is currently responsible for with the exception of British Forces Post Office (BFPO), Disposal Services Agency, Bulk Fuels, Blood Products and Medical Counter Measures. \n\nThe activity within scope falls into four broad areas - 1. supply chain integration, 2. commodity procurement and inventory management 3. storage of 'non explosive' stock items and 4. distribution of 'non-explosives' and munitions", 
+      "total_lifebudget": null, 
+      "date_end": 1517439600000, 
+      "date_start": 1312153200000, 
+      "department_narrative_on_budget_variance": null, 
+      "2013_cash_budget": 7, 
+      "department_commentary": "Having released the Invitation to Negotiate (ITN) at the end of December 2013 the project team have been able to commence the formal engagement/negotiation with the commercial bidders. The process is progressing well. \n\nIn parallel to the negotiation process further actions have been taken to ensure greater delivery confidence. These actions include; \n\n- the implementation of an improved integrated approvals and assurance process across MOD, HMT and Cabinet Office; \n- strengthening of the governance structure to include other government departments that will be key decision makers in the process (the establishment of a Sponsoring Group, a senior level governance group Chaired by the MOD with representation from HMT and Cabinet Office); \n- enhancement of the team developing the in-house proposal to ensure that the output produced reflects the best that can be achieved within the public sector framework.", 
+      "2013_percent_variance": 0, 
+      "Department": "MOD", 
+      "department_narrative_on_budget_life": null, 
+      "2013_cash_variance": 0, 
+      "department_narrative_on_schedule": "No change"
+     }, 
+     "Type 26 Global Combat Ship (T26 GCS)": {
+      "rating": null, 
+      "2013_cash_forecast": 82, 
+      "description": "T26 Single Statement of User Need is to deliver: An interoperable, survivable, available and adaptable capability that is operable globally within the maritime Battle Space to contribute to sea control for the Joint Force and contribute to maritime force protection with the flexibility to operate across and within the range and scale of operations.\n\nCurrent planning assumption is that 13 T26 GCS will be procured in order to replace the T23 Frigates on a 1 for 1 basis.\n\nJoint Assessment Phase Mission is to develop and cost an affordable T26 solution and in-service support model that meets the capability requirements, with the evidence to achieve MOD and corporate approvals, enabling the successful transition of the programme to the Design, Manufacturing and Support phase in 2014.", 
+      "total_lifebudget": null, 
       "date_end": null, 
-      "date_start": 1264978800000, 
-      "department_narrative_on_budget_variance": "13/14 forecast represents the estimated cost of administering the sales process, including use of expert advisers for the FY13/14 year as at September 2013. ", 
-      "2013_cash_budget": 5, 
-      "department_commentary": null, 
-      "2013_percent_variance": -30.514518593988804, 
-      "Department": "BIS", 
-      "department_narrative_on_budget_life": "Whole life costs represent the cumulative total of the annual allocated budgets and do not represent estimated spend. This will be materially lower, as a significant portion of each year's allocated budgets may be unused, and consequently rolled over. Each annual budget represents the estimated cost of administering the sales process, including use of expert advisers", 
-      "2013_cash_variance": -2, 
-      "department_narrative_on_schedule": null
+      "date_start": 1216594800000, 
+      "department_narrative_on_budget_variance": "The in-year variance was due to lower than anticipated cost for engaging with current equipment suppliers to pass information to BAE and a slow build up of the industry project team.", 
+      "2013_cash_budget": 87, 
+      "department_commentary": "A recent review affirmed that successful delivery of T26 GCS appeared feasible but significant issues existed which required management attention.   The Review resulted in a number of recommendations which are in the process of being implemented at Programme and Project level.  The overall assessment was that the issues should be resolvable at this stage of the programme and if addressed promptly, should not present a cost/schedule overrun.", 
+      "2013_percent_variance": -5.643961076130501, 
+      "Department": "MOD", 
+      "department_narrative_on_budget_life": "T26 is being designed to cost within the overall budgeted cost.", 
+      "2013_cash_variance": -5, 
+      "department_narrative_on_schedule": "T26 remains in its Assessment Phase, maturing the design and driving down costs ahead of the main investment decision towards the end of 2014.  The Project remains on track to replace the T23 Frigates as soon as possible after 2020."
      }
     }, 
     "summary": {
-     "n_over_budget": 0, 
+     "n_over_budget": 2, 
      "n_amber_green": 0, 
-     "2013_cash_variance": -2, 
+     "2013_cash_variance": -4, 
      "n_amber_red": 0, 
      "n_green": 0, 
-     "2013_cash_forecast": 4, 
+     "2013_cash_forecast": 94, 
      "n_amber": 0, 
      "n_red": 0, 
-     "total_lifebudget": 18, 
+     "total_lifebudget": 0, 
      "n_under_budget": 1, 
-     "n": 1, 
-     "2013_percent_variance": -30.514518593988804, 
-     "2013_cash_budget": 5
+     "n": 4, 
+     "2013_percent_variance": -3.3231083844580636, 
+     "2013_cash_budget": 97
     }
    }, 
-   "Exempt-Section43(2)ofFreedomofInformationAct2000(PrejudicetoCommercialInterests)": {
+   "Amber/ Red": {
     "projects": {
-     "Rehabilitation Programme": {
-      "rating": null, 
-      "2013_cash_forecast": null, 
-      "description": "The aim of the Rehabilitation Programme is to open up rehabilitation services to a more diverse market of private and voluntary sector providers, and introduce payment by results to reward providers for their success in reducing re-offending. The efficiencies generated by these reforms will allow us to extend the provision of rehabilitation support to offenders who serve a custodial sentence of less than 12 months for the first time.", 
-      "total_lifebudget": null, 
-      "date_end": null, 
-      "date_start": 1352070000000, 
-      "department_narrative_on_budget_variance": "Not applicable.", 
-      "2013_cash_budget": null, 
-      "department_commentary": null, 
-      "2013_percent_variance": null, 
-      "Department": "MoJ", 
-      "department_narrative_on_budget_life": "Not applicable.", 
-      "2013_cash_variance": null, 
-      "department_narrative_on_schedule": null
+     "Emergency Services Mobile Communications Programme (ESMCP)": {
+      "rating": "Amber/ Red", 
+      "2013_cash_forecast": 10, 
+      "description": "The two primary aims of this programme are to:\n- Deliver modern, cost effective, resilient and interoperable mobile voice and data services as required by operational elements of the emergency services, with appropriate levels of confidentiality for the traffic carried fit for purpose for at least the period 2020 - 2030; and \n- Ensure a smooth transition from Airwave to the new service(s).  ", 
+      "total_lifebudget": 16, 
+      "date_end": 1609369200000, 
+      "date_start": 1306882800000, 
+      "department_narrative_on_budget_variance": "The overspend reflects strengthening of the Programme team to meet the accelerated plan approved by the June 2013 Programme Board. A revised envelope has now been agreed with the Portfolio and Investment Committee and spend is within profile.", 
+      "2013_cash_budget": 6, 
+      "department_commentary": "The rating reflected the pace, scale and complexity involved in delivering this cross government Programme.  The actions we have taken to mitigate the RAG status are as follows;  the Programme strengthened the team, resolved contracting and funding issues with stakeholders, carried out external readiness reviews and gained OBC approval from the emergency services, lead departments, CO and Treasury, to allow the procurement phase to be launched 14 Apr 2014. ", 
+      "2013_percent_variance": 50.146627565982406, 
+      "Department": "HO", 
+      "department_narrative_on_budget_life": "Whole life costs will be developed in due course once the final scope of the programme has been agreed.", 
+      "2013_cash_variance": 3, 
+      "department_narrative_on_schedule": "The Programme team are working to the accelerated plan approved by the June 2013 Programme Board to procure a new service provider by 2015. The Programme is on track to deliver as scheduled."
      }
     }, 
     "summary": {
      "n_over_budget": 1, 
      "n_amber_green": 0, 
-     "2013_cash_variance": 0, 
+     "2013_cash_variance": 3, 
      "n_amber_red": 0, 
      "n_green": 0, 
-     "2013_cash_forecast": 0, 
+     "2013_cash_forecast": 10, 
+     "n_amber": 0, 
+     "n_red": 0, 
+     "total_lifebudget": 16, 
+     "n_under_budget": 0, 
+     "n": 1, 
+     "2013_percent_variance": 50.146627565982406, 
+     "2013_cash_budget": 6
+    }
+   }, 
+   "Reset": {
+    "projects": {
+     "Universal Credit Programme": {
+      "rating": null, 
+      "2013_cash_forecast": 201, 
+      "description": "Universal Credit aims to reduce the number of workless households by reducing the financial and administrative barriers to work that exist in the current system of benefits and tax credits. It replaces the complexity of the income-related benefits system (Housing Benefit, Income Support, income-related Employment and Support Allowance, income-related Jobseeker\u2019s Allowance, Working Tax Credit and Child Tax Credit) with a single payment which supports people to find work, find more work, and find better paid work.", 
+      "total_lifebudget": null, 
+      "date_end": null, 
+      "date_start": 1321484400000, 
+      "department_narrative_on_budget_variance": "The budget provision made for Universal Credit reflects the original funding provided to the Programme in November 2010, as part of the Department\u2019s Spending Review 2010 settlement. \n\nThe reduction in forecast spend reflects the changes in the Programme delivery and migration plans in 2013-14 since the original budget was set. The forecast reflects estimates based on plans/information as at September 2013 - full year expenditure is now estimated to be c\u00a3155m.\n", 
+      "2013_cash_budget": 571, 
+      "department_commentary": "During 2013, the Programme was reset, culminating in the revised plans announced on 5 December 2013.  These plans included:\no The continued roll-out of Universal Credit to ten pathfinder sites, completed successfully on 7 April 2014 with the extension to Shotton;\no The extension of this live service to include claims from couples in summer 2014, and from families in autumn 2014, with a geographical expansion to other sites in the North West;\no The creation of a rigorous \u2018test and learn\u2019 strategy so that both qualitative and quantitative impacts of this live service shape further developments;\no In particular, shaping the work to develop an enhanced digital service, due to start in low volumes in autumn 2014, with progressive development and greater scale through 2015-16;\no With the goal of making Universal Credit available in each part of Great Britain during 2016; and with the majority of existing claims to legacy benefits then moving onto Universal Credit during 2016 and 2017.\n\nEarly claimant evaluation results have been positive, showing 90% of people making claims online. Almost two-thirds of claimants think that UC provides a better financial incentive to work.\n\nProgress has also been made against National Audit Office and Public Accounts Committee recommendations, including the strengthening of governance and reporting mechanisms, improving financial management, engaging more strongly with delivery partners, and recasting the business case to reflect the new delivery plan.\n\n", 
+      "2013_percent_variance": -64.7601133818589, 
+      "Department": "DWP", 
+      "department_narrative_on_budget_life": "The Universal Credit Business Case and whole life costs will be updated to reflect the results of \u2018test and learn\u2019 and the progressive development of plans for later years.", 
+      "2013_cash_variance": -371, 
+      "department_narrative_on_schedule": "Delivery remains on track against plans announced on 5 December (see above).\nAt the same time, to support this cultural transformation, the Department has:\n\u2022 rolled out the Claimant Commitment to all new JSA claims across the country;\n\u2022 introduced Universal Jobmatch, an online job posting and matching service for jobseekers and companies;\n\u2022 begun eleven in-work conditionality pilots to test how to best encourage claimants to progress in work\n\u2022 expanded improved access to digital services across the Jobcentre Plus network. \n\n"
+     }
+    }, 
+    "summary": {
+     "n_over_budget": 0, 
+     "n_amber_green": 0, 
+     "2013_cash_variance": -371, 
+     "n_amber_red": 0, 
+     "n_green": 0, 
+     "2013_cash_forecast": 201, 
      "n_amber": 0, 
      "n_red": 0, 
      "total_lifebudget": 0, 
-     "n_under_budget": 0, 
+     "n_under_budget": 1, 
      "n": 1, 
-     "2013_percent_variance": 0, 
-     "2013_cash_budget": 0
+     "2013_percent_variance": -64.7601133818589, 
+     "2013_cash_budget": 571
     }
    }, 
    "Green": {
@@ -2223,7 +2261,7 @@
       "2013_cash_budget": 10, 
       "department_commentary": "The Green rating reflects that the programme is on track to deliver. To date, 139 courts have closed, the latest of which was Andover Magistrates' Court in December 2013.  ", 
       "2013_percent_variance": -58.78649635036497, 
-      "Department": "MOJ", 
+      "Department": "MoJ", 
       "department_narrative_on_budget_life": "This project is due to close in September 2014.  The total project costs are lower than the business case (budget) by \u00a318.7m. This is a result of lower dilapidations and lease exit costs than anticipated, \u00a35m, lower ICT costs of \u00a31m and reduced enabling work costs of \u00a312m. ", 
       "2013_cash_variance": -7, 
       "department_narrative_on_schedule": "There are two closures remaining before the programme closes in September 2014. "
@@ -2418,7 +2456,7 @@
       "2013_cash_budget": 14, 
       "department_commentary": "The project is now over, officially live service commenced in July 1 2013, following six months of transition and transformation. The transition project ended in Oct 2013, following the decommissing and exiting of the legacy arrangements.", 
       "2013_percent_variance": 60.77, 
-      "Department": "DOH", 
+      "Department": "DoH", 
       "department_narrative_on_budget_life": "The conclusion of the transition prohect in 12/13 and commencement of live service from July 1  2013", 
       "2013_cash_variance": 8, 
       "department_narrative_on_schedule": "No departmental narrative"
@@ -3015,22 +3053,6 @@
       "2013_cash_variance": 0, 
       "department_narrative_on_schedule": "The NEM programme remains on track to deliver its agreed remit by 2021. The major change in the last year to the NEM schedule has been the decision to launch the Forces Help To Buy (FHTB) interest-free loan pilot in April 2014, a year earlier than originally planned."
      }, 
-     "Mobile Infrastructure Project": {
-      "rating": "Amber/Green ", 
-      "2013_cash_forecast": 14, 
-      "description": "MIP is intended to  provide economic growth through delivering a sustainable solution for people living and working in areas with no mobile coverage.\n\nThe Mobile Infrastructure Project has been estimated at providing economic benefits of between \u00a3375m and \u00a3860m.\n\nGovernment committed in 2012 budget to provide coverage to up to 60,000 premises and 10 key roads in Not-Spots.\n\nGovernment will pay the infrastructure capital costs and all four Mobile Network Operators will provide state of the art coverage from the sites, as well as paying to operate them over the twenty-year life of the project. ", 
-      "total_lifebudget": 155, 
-      "date_end": 1427756400000, 
-      "date_start": 1317423600000, 
-      "department_narrative_on_budget_variance": "Correct at Q2.\n\nThe MIP FBC was approved by HMT on 28 November, including in principle approval for expenditure in 15-16, and DCMS and HMT have agreed to re-visit the MIP CDEL profile in May 2014 when technical and radio planning work currently underway is complete and the cost profile more certain. ", 
-      "2013_cash_budget": 71, 
-      "department_commentary": "There are inherent uncertainties around building mobile phone networks. Sites must be economic to acquire, build and run; they need to have a power source within reasonable reach, access back to the mobile operators\u2019 networks, be sufficiently accessible to build and operate, and cover sufficient people to make the investment of public money worthwhile. The MIP is progressively working through these questions for all of the sites, but until all have been surveyed, the precise number of sites will not be known.\n", 
-      "2013_percent_variance": -80.28169014084507, 
-      "Department": "DCMS", 
-      "department_narrative_on_budget_life": "Correct at Q2. Additional admin funding has since been awarded to BDUK which is reflected in the Q4 return. The costs reported in the GMPP returns are Government funding only.  Other funding sources are not covered in these figures.", 
-      "2013_cash_variance": -57, 
-      "department_narrative_on_schedule": "On schedule (as of September  2013)"
-     }, 
      "Harmondsworth and Colnbrook Retender ": {
       "rating": "Amber/Green", 
       "2013_cash_forecast": 0, 
@@ -3275,20 +3297,20 @@
     "summary": {
      "n_over_budget": 12, 
      "n_amber_green": 53, 
-     "2013_cash_variance": -58, 
+     "2013_cash_variance": -1, 
      "n_amber_red": 0, 
      "n_green": 0, 
-     "2013_cash_forecast": 7673, 
+     "2013_cash_forecast": 7659, 
      "n_amber": 0, 
      "n_red": 0, 
-     "total_lifebudget": 106906, 
-     "n_under_budget": 20, 
-     "n": 54, 
-     "2013_percent_variance": -0.7449699640210672, 
-     "2013_cash_budget": 7731
+     "total_lifebudget": 106751, 
+     "n_under_budget": 19, 
+     "n": 53, 
+     "2013_percent_variance": -0.00779407701446229, 
+     "2013_cash_budget": 7660
     }
    }, 
-   "DataexemptunderSection43andSection35oftheFreedomofInformationAct(2000)": {
+   "Data exempt under Section 43 and Section 35 of the Freedom of Information Act (2000)": {
     "projects": {
      "Electricity Market Reform Programme": {
       "rating": null, 
@@ -3371,39 +3393,39 @@
      "2013_cash_budget": 27
     }
    }, 
-   "ExemptunderSection43(2)oftheFreedomofInformationAct(2000)": {
+   "Exempt under Section 26 of the Freedom of Information Act (2000)": {
     "projects": {
-     "Spearfish Upgrade (SFU) Programme": {
+     "End Crypto Units (ECU)": {
       "rating": null, 
-      "2013_cash_forecast": null, 
-      "description": "SFU Project has 4 key outputs:\n1. Single Fuel \u2013 Create a single fuel weapon to replace the current bi-propellant system;\n2. Insensitive Munition (IM) Warhead. Replacement of the current warhead with an IM warhead before the existing warheads start to reach their end of life;\n3. Digital Weapon \u2013 Digitisation of the weapon to deliver the software integrity improvements necessary to comply with the modern standard for systematic safety integrity;\n4. Fibre Optic Guide-fibre \u2013 The replacement guidance link will remove the communication delays between the platform and the weapon, thereby enabling safety and capability improvements and replacing the existing Copper/Cadmium (Cu/Cd) wire.  ", 
-      "total_lifebudget": null, 
-      "date_end": 1672441200000, 
-      "date_start": 1207004400000, 
+      "2013_cash_forecast": 27, 
+      "description": "To support the Department's information assurance capability.", 
+      "total_lifebudget": 188, 
+      "date_end": 2229980400000, 
+      "date_start": 1188514800000, 
       "department_narrative_on_budget_variance": null, 
-      "2013_cash_budget": null, 
-      "department_commentary": "The delivery confidence rating reflects the delays in placing the contract for the next phase of the project. All options are being analysed prior to establishing a new baseline.", 
-      "2013_percent_variance": 0, 
+      "2013_cash_budget": 27, 
+      "department_commentary": null, 
+      "2013_percent_variance": -1.6540812657317667, 
       "Department": "MOD", 
-      "department_narrative_on_budget_life": null, 
-      "2013_cash_variance": 0, 
+      "department_narrative_on_budget_life": "Budgetary alignment maintained.", 
+      "2013_cash_variance": -1, 
       "department_narrative_on_schedule": null
      }
     }, 
     "summary": {
      "n_over_budget": 0, 
      "n_amber_green": 0, 
-     "2013_cash_variance": 0, 
+     "2013_cash_variance": -1, 
      "n_amber_red": 0, 
      "n_green": 0, 
-     "2013_cash_forecast": 0, 
+     "2013_cash_forecast": 27, 
      "n_amber": 0, 
      "n_red": 0, 
-     "total_lifebudget": 0, 
-     "n_under_budget": 0, 
+     "total_lifebudget": 188, 
+     "n_under_budget": 1, 
      "n": 1, 
-     "2013_percent_variance": 0, 
-     "2013_cash_budget": 0
+     "2013_percent_variance": -1.6540812657317414, 
+     "2013_cash_budget": 27
     }
    }, 
    "Red": {
@@ -3487,6 +3509,41 @@
      "n": 4, 
      "2013_percent_variance": -4.270236482966988, 
      "2013_cash_budget": 959
+    }
+   }, 
+   "Amber/Green ": {
+    "projects": {
+     "Mobile Infrastructure Project": {
+      "rating": "Amber/Green ", 
+      "2013_cash_forecast": 14, 
+      "description": "MIP is intended to  provide economic growth through delivering a sustainable solution for people living and working in areas with no mobile coverage.\n\nThe Mobile Infrastructure Project has been estimated at providing economic benefits of between \u00a3375m and \u00a3860m.\n\nGovernment committed in 2012 budget to provide coverage to up to 60,000 premises and 10 key roads in Not-Spots.\n\nGovernment will pay the infrastructure capital costs and all four Mobile Network Operators will provide state of the art coverage from the sites, as well as paying to operate them over the twenty-year life of the project. ", 
+      "total_lifebudget": 155, 
+      "date_end": 1427756400000, 
+      "date_start": 1317423600000, 
+      "department_narrative_on_budget_variance": "Correct at Q2.\n\nThe MIP FBC was approved by HMT on 28 November, including in principle approval for expenditure in 15-16, and DCMS and HMT have agreed to re-visit the MIP CDEL profile in May 2014 when technical and radio planning work currently underway is complete and the cost profile more certain. ", 
+      "2013_cash_budget": 71, 
+      "department_commentary": "There are inherent uncertainties around building mobile phone networks. Sites must be economic to acquire, build and run; they need to have a power source within reasonable reach, access back to the mobile operators\u2019 networks, be sufficiently accessible to build and operate, and cover sufficient people to make the investment of public money worthwhile. The MIP is progressively working through these questions for all of the sites, but until all have been surveyed, the precise number of sites will not be known.\n", 
+      "2013_percent_variance": -80.28169014084507, 
+      "Department": "DCMS", 
+      "department_narrative_on_budget_life": "Correct at Q2. Additional admin funding has since been awarded to BDUK which is reflected in the Q4 return. The costs reported in the GMPP returns are Government funding only.  Other funding sources are not covered in these figures.", 
+      "2013_cash_variance": -57, 
+      "department_narrative_on_schedule": "On schedule (as of September  2013)"
+     }
+    }, 
+    "summary": {
+     "n_over_budget": 0, 
+     "n_amber_green": 0, 
+     "2013_cash_variance": -57, 
+     "n_amber_red": 0, 
+     "n_green": 0, 
+     "2013_cash_forecast": 14, 
+     "n_amber": 0, 
+     "n_red": 0, 
+     "total_lifebudget": 155, 
+     "n_under_budget": 1, 
+     "n": 1, 
+     "2013_percent_variance": -100, 
+     "2013_cash_budget": 71
     }
    }
   }, 
