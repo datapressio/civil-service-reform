@@ -9,16 +9,20 @@ Repository.prototype.getDepartmentsGraph = function(callback) {
     var csData = response["Civil Service"];
     var n = 0;
     var m = 0;
-    var departments = _.map(csData.departments, function(departmentData, departmentName) {
-      var projects = _.map(departmentData.projects, function(projectData, projectName) {
+    var departments = _.sortBy(_.map(csData.departments, function(departmentData, departmentName) {
+      var projects = _.sortBy(_.map(departmentData.projects, function(projectData, projectName) {
         p =  new models.Project(projectName, projectData, "project-"+m);
         m++;
         return p;
+      }), function(p) {
+        return - p.cash_budget();
       });
       d = new models.Department(departmentName, departmentData.summary, projects, "department-" + n);
       _.each(projects, function(p) { p.department = d });//FIXME
       n++;
       return d;
+    }), function(d) {
+      return - d.cash_budget();
     });
     var cs = new models.Department("Civil Service", csData.summary, departments, "cs");
     _.each(departments, function(d) { d.parent = cs }); //FIXME
