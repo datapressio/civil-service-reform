@@ -43,7 +43,7 @@ DepartmentsTable.prototype = {
   },
 
   _changeSelection: function(event) {
-    var departmentId = event.target.parentNode.className.match(/department\-[0-9]+/)[0];
+    var departmentId = event.target.parentNode.className.match(/(department\-[0-9]+)|cs/)[0];
     this._report.setSelection(this._departmentById(departmentId));
   },
 
