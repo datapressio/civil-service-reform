@@ -110,14 +110,11 @@ Scatterplot.prototype = {
     })));
 
     var dots = this._pointsContainer.selectAll(".dot")
-      .data(projects);
+      .data(projects, function(d) { return d.id });
 
     dots.enter().append("circle")
       .attr("class", "dot")
-      .attr("r", 7)
-      .attr("cx", _.compose(this._xScale, this._xValue))
-      .attr("cy", _.compose(this._yScale, this._yValue))
-      .style("fill", function(d) { return colors[d.rating()] })
+      .call(bindListener(this, this._pointStyle))
       .on("click", bindListener(this, function(d) {
         this._vis.setProjectSelection(d);
       }));
@@ -134,14 +131,32 @@ Scatterplot.prototype = {
   },
 
   _onDepartmentHighlightChange: function(department) {
+    console.log(department);
     var projects = this._validProjects(department ? department.children() : []);
     var highlight = this._pointsContainer.selectAll(".highlight")
       .data(projects, function(d) { return d.id });
 
-    //selection
-    //FIXME only highlight selected depts
     highlight.enter().append("circle").call(this._pointHighlight("highlight", 3));
     highlight.exit().remove();
+
+    var displayHighlightDots = department && !this._vis.departmentSelected(department);
+
+    highlightDots = this._pointsContainer.selectAll(".highlightDot")
+      .data(displayHighlightDots ? projects : [],
+          function(d) { return d.id; });
+
+    highlightDots.enter().append("circle")
+      .attr("class", "highlightDot").call(bindListener(this, this._pointStyle));
+
+    highlightDots.exit().remove();
+
+  },
+
+  _pointStyle: function(c) {
+    c.attr("r", 7)
+    .attr("cx", _.compose(this._xScale, this._xValue))
+    .attr("cy", _.compose(this._yScale, this._yValue))
+    .style("fill", function(d) { return colors[d.rating()] });
   },
 
   _validProjects: function(projects) {

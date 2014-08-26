@@ -226,6 +226,10 @@ h3 {
   fill: #eaeaea;
 }
 
+#csr-mp-scatterplot .highlightDot {
+  fill: #eaeaea;
+}
+
 #csr-mp-scatterplot .dot {
  cursor: pointer;
 }

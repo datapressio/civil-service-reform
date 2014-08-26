@@ -29,6 +29,10 @@ Scatterplot.prototype = {
     }));
   },
 
+  departmentSelected: function(dept) {
+    return _.contains(this._departmentSelections, dept);
+  },
+
   toggleDepartmentSelection: function(selection) {
     _.include(this._departmentSelections, selection) ? this.removeDepartmentSelections([selection]) : this.addDepartmentSelections([selection]);
   },
