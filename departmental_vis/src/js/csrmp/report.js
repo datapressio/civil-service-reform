@@ -9,6 +9,7 @@ var Report = module.exports = function (nodeId) {
   this._selection = null;
   this._projectSelection = null;
   this._repo = new data.Repository();
+  this.registerSelectionChangeCallback(bindListener(this, this._onSelectionChange));
 };
 
 Report.prototype.registerSelectionChangeCallback = function(callback) {
@@ -33,18 +34,28 @@ Report.prototype.setProjectSelection = function(projects) {
   }));
 }
 
+Report.prototype._onSelectionChange = function(department) {
+  var table;
+  if(department === this._cs) {
+    table = this._deptsTable;
+  } else {
+    table = new components.ProjectsTable(this, department.projects());
+  }
+  this._layout.replaceTable(table);
+},
+
 
 Report.prototype.init = function() {
   this._repo.getDepartmentsGraph(bindListener(this, function(cs) {
-    var depts = [cs].concat(cs.children());
-    var projectsList = new components.ProjectsList(this);
-    var projectsHover = new components.Hoverbox(this, projectsList);
-    var deptsTable = new components.DepartmentsTable(this, depts);
+    this._cs = cs;
+    var depts = cs.children();
+    this._deptsTable = new components.DepartmentsTable(this, depts);
     var deptBudgetPie = new components.BudgetPie(this, cs);
     var ratingsHistogram = new components.RatingsHistogram(this);
     var deptsOverview = new components.DepartmentOverview(this, deptBudgetPie, ratingsHistogram);
-    var layout = new components.Layout(deptsOverview, deptsTable, projectsHover);
-    layout.render("#" + this._nodeId);
+    var breadcrumb = new components.Breadcrumb(this, cs);
+    this._layout = new components.Layout(deptsOverview, this._deptsTable, breadcrumb);
+    this._layout.render("#" + this._nodeId);
     this.setSelection(cs);
   }));
 };

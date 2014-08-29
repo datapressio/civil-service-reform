@@ -1,0 +1,18 @@
+<table class="projects_table">
+  <tr class="header">
+    <th class="name">Project name</th>
+    <th class="budget">Total budget</th>
+    <th class="forecast">Total forecast</th>
+    <th class="variance">Over/under budget</th>
+    <th class="proportion">% of total budget</th>
+  </tr>
+  {{#projects}}
+  <tr class="project {{id}}">
+    <td class="name rating {{rating_class}}">{{label}}</td>
+      <td class="budget">{{cash_budget}}</td>
+      <td class="forecast">{{cash_forecast}}</td>
+      <td class="variance">{{percent_variance}}</td>
+      <td class="proportion">{{budget_proportion}}</td>
+    </tr>
+  {{/projects}}
+</table>

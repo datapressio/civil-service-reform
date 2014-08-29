@@ -142,8 +142,12 @@ h3 {
   -webkit-appearance: none;
 }
 
-.depts_table {
+.breadcrumb {
   margin-top: 2em;
+}
+
+.depts_table {
+  margin-top: 0.5em;
 }
 
 .depts_table table {
@@ -302,7 +306,7 @@ h3 {
   border-left-style: solid;
   border-left-width: 12px;
   padding-left: 12px;
-  border-left-color: transparent;
+  border-left-color: #eaeaea;
 }
 
 .departments_table .rating {

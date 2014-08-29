@@ -45,6 +45,10 @@ Project.prototype.projects = function() {
   return [this];
 }
 
+Project.prototype.parent_budget_proportion = function() {
+  return this.cash_budget() != null ? this.cash_budget() / this.department.cash_budget() : null;
+}
+
 //node methods
 //
 Project.prototype.label = function() {

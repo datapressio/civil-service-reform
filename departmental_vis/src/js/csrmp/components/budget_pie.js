@@ -40,7 +40,6 @@ BudgetPie.prototype._initD3 = function() {
       .outerRadius(radius - 10)
       .innerRadius(radius - 70);
 
-
   this._slice = svg.datum(this._data).selectAll("path").data(this._layout)
     .enter().append("path")
       .style("fill", function(d) { return d.data.color; })

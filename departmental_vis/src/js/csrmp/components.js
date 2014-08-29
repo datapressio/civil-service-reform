@@ -13,3 +13,5 @@ components.DepartmentsMultiSelect = require("./components/departments_multi_sele
 components.DashboardLayout = require("./components/dashboard_layout");
 components.ProjectOverview = require("./components/project_overview");
 components.ProjectsList = require("./components/projects_list");
+components.ProjectsTable = require("./components/projects_table");
+components.Breadcrumb = require("./components/breadcrumb");
