@@ -4,6 +4,7 @@ var slick = require("slick");
 var _ = require("underscore");
 var bindListener = require("../util/bind_listener");
 var computedStyle = require("../util/computed_style");
+var models = require("../models");
 var dom = require("ampersand-dom");
 
 var DepartmentOverview = module.exports = function(report, budgetPie, ratingsHistogram) {
@@ -30,6 +31,7 @@ DepartmentOverview.prototype.render = function(selector) {
 }
 
 DepartmentOverview.prototype._onChangeSelection = function(department) {
+  if(!(department instanceof models.Department)) return;
   slick.find(".name", this._element).innerHTML = department.label();
   slick.find(".projects_count .n", this._element).innerHTML = department.projects_count();
   slick.find(".over_budget_count .n", this._element).innerHTML = department.over_budget_count();

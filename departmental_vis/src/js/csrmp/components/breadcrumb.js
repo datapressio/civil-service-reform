@@ -2,6 +2,7 @@ var slick = require("slick");
 var dom = require("ampersand-dom");
 var bindListener = require("../util/bind_listener");
 var events = require("dom-events");
+var models = require("../models");
 
 var Breadcrumb = module.exports = function(report, root) {
   this._report = report;
@@ -18,10 +19,17 @@ Breadcrumb.prototype = {
   },
 
   _onChangeSelection: function(dept) {
-    dom.html(this._element, "");
-    this._element.appendChild(this._rootElement);
-    if(dept != this._root)  {
-      this._element.appendChild(document.createTextNode(" \u00BB " + dept.label()));
+    if(dept instanceof models.Department) {
+      dom.html(this._element, "");
+      this._element.appendChild(this._rootElement);
+      if(dept != this._root)  {
+        this._element.appendChild(document.createTextNode(" \u00BB "));
+        this._element.appendChild(this._createLinkElement(dept));
+      }
+    } else if(Array.isArray(dept)) {
+      var last = this._element.lastChild;
+      if(last.nodeType == 3) { last.remove() }
+      this._element.appendChild(document.createTextNode(" \u00BB " + dept[0].rating()));
     }
   },
 

@@ -4,6 +4,7 @@ var bindListener = require("../util/bind_listener");
 var d3 = require("d3-browserify");
 var Patterns = require("./Patterns")
 var colors = require("../util/colors")
+var models = require("../models")
 
 RatingsHistogram = module.exports = function(report) {
  this._report = report;
@@ -15,6 +16,7 @@ RatingsHistogram.prototype.render = function(selector) {
 }
 
 RatingsHistogram.prototype._onSelectionChange = function(dept) {
+  if(!(dept instanceof models.Department)) return;
   var data = [dept.red_count(), dept.amber_red_count(), dept.amber_count(), dept.amber_green_count(), dept.green_count()];
   var projects = [dept.red_projects(), dept.amber_red_projects(), dept.amber_projects(), dept.amber_green_projects(), dept.green_projects()];
   var maxValue = _.max(data);
@@ -75,12 +77,9 @@ RatingsHistogram.prototype._onSelectionChange = function(dept) {
       .attr("y", function(d) { return y(d); })
       .attr("height", function(d) { return height - y(d); })
       .style("fill", function(d) {return colors[colorNames[_.indexOf(data, d)]]; })
-      .on("mouseover", bindListener(this, function(d) {
+      .on("click", bindListener(this, function(d) {
         var ps = projects[_.indexOf(data, d)];
-        this._report.setProjectSelection(ps);
+        this._report.setSelection(ps);
       }))
-      .on("mouseout", bindListener(this, function(d) {
-        this._report.setProjectSelection(null);
-      }));
 }
 

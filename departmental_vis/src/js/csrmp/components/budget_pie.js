@@ -1,6 +1,7 @@
 var render = require("../util/render")
 var fs = require("fs");
 var slick = require("slick");
+var models = require("../models")
 var _ = require("underscore");
 var bindListener = require("../util/bind_listener");
 var d3 = require("d3-browserify");
@@ -51,13 +52,15 @@ BudgetPie.prototype._initD3 = function() {
 }
 
 BudgetPie.prototype._onSelectionChange = function(dept) {
-  this._layout.value(bindListener(this, function(d) {
-    return d.dept ? dept.cash_budget() : this._parentDept.cash_budget() - dept.cash_budget();
-  }));
-  this._slice.data(this._layout);
-  this._slice.attr("d", this._arc);
-  percentage = dept.cash_budget() / this._parentDept.cash_budget() * 100;
-  this._label.text(percentage.toFixed(1)+ "%")
+  if(dept instanceof models.Department) {
+    this._layout.value(bindListener(this, function(d) {
+      return d.dept ? dept.cash_budget() : this._parentDept.cash_budget() - dept.cash_budget();
+    }));
+    this._slice.data(this._layout);
+    this._slice.attr("d", this._arc);
+    percentage = dept.cash_budget() / this._parentDept.cash_budget() * 100;
+    this._label.text(percentage.toFixed(1)+ "%")
+  }
 }
 
 BudgetPie.prototype._data = [

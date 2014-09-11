@@ -27,17 +27,13 @@ Report.prototype.registerProjectSelectionCallback = function(callback) {
   this._projectSelectionChangeCallbacks.push(callback);
 }
 
-Report.prototype.setProjectSelection = function(projects) {
-  this._projectSelection = projects;
-  _.each(this._projectSelectionChangeCallbacks, bindListener(this, function(callback) {
-    callback(this._projectSelection);
-  }));
-}
-
 Report.prototype._onSelectionChange = function(department) {
   var table;
   if(department === this._cs) {
     table = this._deptsTable;
+  } else if(Array.isArray(department)) {
+    //HAXX! department is actually a list of projects - to support filtering by dept and status. FIXME.
+    table = new components.ProjectsTable(this, department);
   } else {
     table = new components.ProjectsTable(this, department.projects());
   }

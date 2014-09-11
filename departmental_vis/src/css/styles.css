@@ -125,6 +125,10 @@ h3 {
   margin-top: 2em;
 }
 
+.ratings_histogram rect.bar:hover {
+  cursor: pointer;
+}
+
 .depts_dropdown {
     border: 1px solid #333;
     width: 100%;
@@ -175,7 +179,7 @@ h3 {
   width: 33%;
 }
 
-.depts_table tr:hover:not(.header) {
+.departments_table tr:hover:not(.header) {
   background-color: #ddd;
   cursor: pointer;
 }

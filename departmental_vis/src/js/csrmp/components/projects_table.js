@@ -18,7 +18,6 @@ ProjectsTable.prototype = {
   _templateParams: function() {
     return {
       projects: _.map(this._projects, function(project) {
-        console.log(project, project.percent_variance())
         return {
           id: project.id,
           label: project.label(),

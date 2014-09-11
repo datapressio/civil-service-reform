@@ -131,7 +131,6 @@ Scatterplot.prototype = {
   },
 
   _onDepartmentHighlightChange: function(department) {
-    console.log(department);
     var projects = this._validProjects(department ? department.children() : []);
     var highlight = this._pointsContainer.selectAll(".highlight")
       .data(projects, function(d) { return d.id });
