@@ -78,7 +78,9 @@ RatingsHistogram.prototype._onSelectionChange = function(dept) {
       .attr("height", function(d) { return height - y(d); })
       .style("fill", function(d) {return colors[colorNames[_.indexOf(data, d)]]; })
       .on("click", bindListener(this, function(d) {
-        var ps = projects[_.indexOf(data, d)];
+        var ps = _.sortBy(projects[_.indexOf(data, d)], function(project) {
+          return - project.cash_budget(); 
+        });
         this._report.setSelection(ps);
       }))
 }
