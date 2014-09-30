@@ -26,3 +26,9 @@ Layout.prototype.replaceTable = function(table) {
   dom.html(tableContainer, "");
   table.render(this._deptsTableSelector);
 }
+
+Layout.prototype.replaceOverview = function(overview) {
+  var overviewContainer = slick.find(this._deptOverviewSelector);
+  dom.html(overviewContainer, "");
+  overview.render(this._deptOverviewSelector);
+}

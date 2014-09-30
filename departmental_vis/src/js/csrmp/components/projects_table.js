@@ -1,6 +1,9 @@
 var fs = require("fs");
 var _ = require("underscore");
 var render = require("../util/render");
+var slick = require("slick");
+var events = require("dom-events");
+var bindListener = require("../util/bind_listener");
 
 var ProjectsTable = module.exports = function(report, projects) {
   this._report = report;
@@ -13,6 +16,9 @@ ProjectsTable.prototype = {
 
   render: function(selector) {
     this._element = render(this._template, selector, this._templateParams());
+    _.each(slick.search("tr.project", this._element), bindListener(this, function(row) {
+      events.on(row, "click", bindListener(this, this._changeSelection));
+    }));
   },
 
   _templateParams: function() {
@@ -29,6 +35,16 @@ ProjectsTable.prototype = {
         }
       })
     }
+  },
+
+  _changeSelection: function(event) {
+    var projectId = event.target.parentNode.className.match(/(project\-[0-9]+)/)[0];
+    this._report.setSelection(this._projectById(projectId));
+  },
+
+  _projectById: function(id) {
+    var project = _.find(this._projects, function(project) { return project.id == id });
+    return project;
   }
 
 

@@ -150,10 +150,6 @@ h3 {
   margin-top: 2em;
 }
 
-.breadcrumb a:hover {
-  cursor: pointer;
-}
-
 .depts_table {
   margin-top: 0.5em;
 }
@@ -183,7 +179,7 @@ h3 {
   width: 33%;
 }
 
-.departments_table tr:hover:not(.header), .projects_table tr:hover:not(.header) {
+.departments_table tr:hover:not(.header) {
   background-color: #ddd;
   cursor: pointer;
 }
@@ -238,8 +234,7 @@ h3 {
  * view */
 #csr-mp-report .project_overview h3 {
   border-left: none;
-  padding-left: 0;
-  font-size: 2em;
+  padding-left: none;
 }
 
 
