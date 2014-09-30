@@ -17,10 +17,15 @@ RatingsHistogram.prototype.render = function(selector) {
 
 RatingsHistogram.prototype._onSelectionChange = function(dept) {
   if(!(dept instanceof models.Department)) return;
-  var data = [dept.red_count(), dept.amber_red_count(), dept.amber_count(), dept.amber_green_count(), dept.green_count()];
-  var projects = [dept.red_projects(), dept.amber_red_projects(), dept.amber_projects(), dept.amber_green_projects(), dept.green_projects()];
-  var maxValue = _.max(data);
+  console.log([[dept.red_count(), dept.red_projects().length],
+   [dept.amber_red_count(), dept.amber_red_projects().length],
+   [dept.amber_count(), dept.amber_projects().length],
+   [dept.amber_green_count(), dept.amber_green_projects().length],
+   [dept.green_count(), dept.green_projects().length],
+   ]);
 
+  var values = [dept.red_count(), dept.amber_red_count(), dept.amber_count(), dept.amber_green_count(), dept.green_count()];
+  var projects = [dept.red_projects(), dept.amber_red_projects(), dept.amber_projects(), dept.amber_green_projects(), dept.green_projects()];
   var colorNames = [
     "Red",
     "Amber/Red",
@@ -29,6 +34,15 @@ RatingsHistogram.prototype._onSelectionChange = function(dept) {
     "Green"
   ]
 
+  var maxValue = _.max(values);
+
+  var data = _.map(_.zip(colorNames, values, projects), function(args) {
+    return {
+      rating : args[0],
+      value : args[1],
+      projects : args[2]
+    }   
+  });
 
   this._element.innerHTML = "";
   var width = this._element.offsetWidth;
@@ -54,9 +68,9 @@ RatingsHistogram.prototype._onSelectionChange = function(dept) {
   var svg = d3.select(this._element).append("svg")
       .attr("width", width)
       .attr("height", height)
-      .append("g")
+      .append("g");
 
-  var p = new Patterns()
+  var p = new Patterns();
   p.render();
 
   svg.append("g")
@@ -74,11 +88,11 @@ RatingsHistogram.prototype._onSelectionChange = function(dept) {
       .attr("class", "bar")
       .attr("x", function(d) { return x(_.indexOf(data, d)); })
       .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(d); })
-      .attr("height", function(d) { return height - y(d); })
-      .style("fill", function(d) {return colors[colorNames[_.indexOf(data, d)]]; })
+      .attr("y", function(d) { return y(d.value); })
+      .attr("height", function(d) { return height - y(d.value); })
+      .style("fill", function(d) {return colors[d.rating]; })
       .on("click", bindListener(this, function(d) {
-        var ps = _.sortBy(projects[_.indexOf(data, d)], function(project) {
+        var ps = _.sortBy(d.projects, function(project) {
           return - project.cash_budget(); 
         });
         this._report.setSelection(ps);
