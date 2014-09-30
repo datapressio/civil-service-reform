@@ -17,13 +17,6 @@ RatingsHistogram.prototype.render = function(selector) {
 
 RatingsHistogram.prototype._onSelectionChange = function(dept) {
   if(!(dept instanceof models.Department)) return;
-  console.log([[dept.red_count(), dept.red_projects().length],
-   [dept.amber_red_count(), dept.amber_red_projects().length],
-   [dept.amber_count(), dept.amber_projects().length],
-   [dept.amber_green_count(), dept.amber_green_projects().length],
-   [dept.green_count(), dept.green_projects().length],
-   ]);
-
   var values = [dept.red_count(), dept.amber_red_count(), dept.amber_count(), dept.amber_green_count(), dept.green_count()];
   var projects = [dept.red_projects(), dept.amber_red_projects(), dept.amber_projects(), dept.amber_green_projects(), dept.green_projects()];
   var colorNames = [

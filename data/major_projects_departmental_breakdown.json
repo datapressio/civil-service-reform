@@ -2299,7 +2299,7 @@
    "DCMS": {
     "projects": {
      "Broadband Delivery Programme": {
-      "rating": "Amber ", 
+      "rating": "Amber", 
       "2013_cash_forecast": 99, 
       "description": "To ensure the rapid roll-out of broadband across the country in support of economic growth, including in rural areas.", 
       "total_lifebudget": 529, 
@@ -2379,7 +2379,7 @@
       "department_narrative_on_schedule": "On schedule (as of September  2013)"
      }, 
      "Mobile Infrastructure Project": {
-      "rating": "Amber/Green ", 
+      "rating": "Amber/Green", 
       "2013_cash_forecast": 14, 
       "description": "MIP is intended to  provide economic growth through delivering a sustainable solution for people living and working in areas with no mobile coverage.\n\nThe Mobile Infrastructure Project has been estimated at providing economic benefits of between \u00a3375m and \u00a3860m.\n\nGovernment committed in 2012 budget to provide coverage to up to 60,000 premises and 10 key roads in Not-Spots.\n\nGovernment will pay the infrastructure capital costs and all four Mobile Network Operators will provide state of the art coverage from the sites, as well as paying to operate them over the twenty-year life of the project. ", 
       "total_lifebudget": 155, 
@@ -2397,12 +2397,12 @@
     }, 
     "summary": {
      "n_over_budget": 1, 
-     "n_amber_green": 2, 
+     "n_amber_green": 3, 
      "2013_cash_variance": -82, 
      "n_amber_red": 2, 
      "n_green": 0, 
      "2013_cash_forecast": 195, 
-     "n_amber": 0, 
+     "n_amber": 1, 
      "n_red": 0, 
      "total_lifebudget": 1431, 
      "n_under_budget": 2, 
@@ -3568,12 +3568,12 @@
   }, 
   "summary": {
    "n_over_budget": 50, 
-   "n_amber_green": 53, 
+   "n_amber_green": 54, 
    "2013_cash_variance": -1111, 
    "n_amber_red": 36, 
    "n_green": 17, 
    "2013_cash_forecast": 18059, 
-   "n_amber": 62, 
+   "n_amber": 63, 
    "n_red": 4, 
    "total_lifebudget": 398606, 
    "n_under_budget": 68, 

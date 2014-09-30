@@ -64,5 +64,5 @@ Project.prototype.scale = function() {
 };
 
 Project.prototype.rating = function() {
-  return this._details.rating;
+  return this._details.rating ? this._details.rating.trim() : null;
 }
